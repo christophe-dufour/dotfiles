@@ -26,7 +26,7 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $DOTFILES/zsh/aliases.zsh
 
 # Drift detection (reads cache — non-blocking)
-source $DOTFILES/bin/dots-status
+$DOTFILES/bin/dots-status
 
 # Machine-specific overrides
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
