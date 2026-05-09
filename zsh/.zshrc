@@ -23,5 +23,8 @@ source $DOTFILES/zsh/aliases.zsh
 # Machine-specific overrides
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
 
+# Drift detection
+source $DOTFILES/bin/dots-status
+
 # Prompt — must be last
 eval "$(starship init zsh)"

@@ -1,0 +1,50 @@
+# Starship prompt config
+# Docs: https://starship.rs/config/
+
+format = """
+$directory\
+$git_branch\
+$git_status\
+$nodejs\
+$python\
+$rust\
+$golang\
+$cmd_duration\
+$line_break\
+$character"""
+
+[directory]
+truncation_length = 4
+truncate_to_repo = true
+
+[git_branch]
+symbol = " "
+
+[git_status]
+ahead = "⇡${count}"
+behind = "⇣${count}"
+diverged = "⇕⇡${ahead_count}⇣${behind_count}"
+staged = "[+${count}](green)"
+modified = "[~${count}](yellow)"
+untracked = "[?${count}](blue)"
+deleted = "[-${count}](red)"
+
+[nodejs]
+symbol = " "
+
+[python]
+symbol = " "
+
+[rust]
+symbol = " "
+
+[golang]
+symbol = " "
+
+[cmd_duration]
+min_time = 2_000
+format = "took [$duration](yellow) "
+
+[character]
+success_symbol = "[❯](green)"
+error_symbol = "[❯](red)"
