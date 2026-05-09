@@ -1,0 +1,33 @@
+#!/bin/zsh
+# Drift detection — runs silently, only prints when something needs attention.
+
+DOTFILES="${DOTFILES:-$HOME/.dotfiles}"
+issues=()
+
+# Uncommitted changes
+if ! git -C "$DOTFILES" diff --quiet 2>/dev/null || ! git -C "$DOTFILES" diff --cached --quiet 2>/dev/null; then
+  issues+=("dotfiles: uncommitted changes")
+fi
+
+# Unpushed commits
+if [ -n "$(git -C "$DOTFILES" log @{u}.. 2>/dev/null)" ]; then
+  issues+=("dotfiles: unpushed commits")
+fi
+
+# Brew packages installed but not in Brewfile
+if command -v brew &>/dev/null; then
+  brewfile="$DOTFILES/Brewfile"
+  untracked=$(brew leaves | while read -r pkg; do
+    grep -q "\"$pkg\"" "$brewfile" 2>/dev/null || echo "$pkg"
+  done)
+  if [ -n "$untracked" ]; then
+    issues+=("brew: untracked packages: $(echo $untracked | tr '\n' ' ')")
+  fi
+fi
+
+if [ ${#issues[@]} -gt 0 ]; then
+  echo "⚠ dotfiles:"
+  for issue in "${issues[@]}"; do
+    echo "  · $issue"
+  done
+fi

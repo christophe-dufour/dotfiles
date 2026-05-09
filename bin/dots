@@ -1,0 +1,60 @@
+#!/bin/zsh
+# dots — dotfiles management CLI
+# Usage:
+#   dots sync              pull latest + re-stow all packages
+#   dots brew add <pkg>    install + add to Brewfile + commit
+#   dots brew rm <pkg>     uninstall + remove from Brewfile + commit
+#   dots status            show drift report
+
+DOTFILES="${DOTFILES:-$HOME/.dotfiles}"
+BREWFILE="$DOTFILES/Brewfile"
+
+_dots_sync() {
+  echo "Pulling latest..."
+  git -C "$DOTFILES" pull
+  echo "Re-stowing packages..."
+  cd "$DOTFILES"
+  for pkg in zsh git ssh starship claude; do
+    stow --restow "$pkg" && echo "  ✓ $pkg"
+  done
+  echo "Done."
+}
+
+_dots_brew_add() {
+  local pkg="$1"
+  [ -z "$pkg" ] && echo "Usage: dots brew add <package>" && exit 1
+  brew install "$pkg"
+  if ! grep -q "\"$pkg\"" "$BREWFILE"; then
+    echo "brew \"$pkg\"" >> "$BREWFILE"
+    git -C "$DOTFILES" add "$BREWFILE"
+    git -C "$DOTFILES" commit -m "brew: add $pkg"
+    git -C "$DOTFILES" push
+    echo "✓ $pkg added to Brewfile and pushed"
+  fi
+}
+
+_dots_brew_rm() {
+  local pkg="$1"
+  [ -z "$pkg" ] && echo "Usage: dots brew rm <package>" && exit 1
+  brew uninstall "$pkg"
+  sed -i '' "/\"$pkg\"/d" "$BREWFILE"
+  git -C "$DOTFILES" add "$BREWFILE"
+  git -C "$DOTFILES" commit -m "brew: remove $pkg"
+  git -C "$DOTFILES" push
+  echo "✓ $pkg removed from Brewfile and pushed"
+}
+
+case "$1" in
+  sync)    _dots_sync ;;
+  status)  "$DOTFILES/bin/dots-status" ;;
+  brew)
+    case "$2" in
+      add) _dots_brew_add "$3" ;;
+      rm)  _dots_brew_rm "$3" ;;
+      *)   echo "Usage: dots brew <add|rm> <package>" ;;
+    esac
+    ;;
+  *)
+    echo "Usage: dots <sync|status|brew <add|rm> <pkg>>"
+    ;;
+esac
