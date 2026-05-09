@@ -1,0 +1,9 @@
+[user]
+	name = Christophe Dufour
+	email = christophe-dufour@users.noreply.github.com
+[push]
+	default = current
+[core]
+	excludesfile = ~/.gitignore_global
+[pull]
+	rebase = true
