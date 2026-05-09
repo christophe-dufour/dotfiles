@@ -1,60 +1,165 @@
-#!/bin/zsh
-# dots — dotfiles management CLI
+#!/usr/bin/env bash
+# dots — dotfiles-aware package manager
 # Usage:
-#   dots sync              pull latest + re-stow all packages
-#   dots brew add <pkg>    install + add to Brewfile + commit
-#   dots brew rm <pkg>     uninstall + remove from Brewfile + commit
-#   dots status            show drift report
+#   dots brew install <pkg>       install + add to Brewfile + commit/push
+#   dots brew uninstall <pkg>     uninstall + remove from Brewfile + commit/push
+#   dots cask install <cask>      same for casks
+#   dots cask uninstall <cask>    same for casks
+#   dots alias <name> <command>   add alias to aliases.zsh + commit/push
+#   dots sync                     pull + brew bundle + re-stow
+#   dots status                   show drift report
+#   dots edit                     open dotfiles in $EDITOR
+#   dots commit [message]         commit + push pending changes
+
+set -uo pipefail
 
 DOTFILES="${DOTFILES:-$HOME/.dotfiles}"
 BREWFILE="$DOTFILES/Brewfile"
 
-_dots_sync() {
-  echo "Pulling latest..."
-  git -C "$DOTFILES" pull
-  echo "Re-stowing packages..."
+BOLD='\033[1m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+RED='\033[0;31m'
+CYAN='\033[0;36m'
+RESET='\033[0m'
+
+ok()   { echo -e "  ${GREEN}✓${RESET} $1"; }
+warn() { echo -e "  ${YELLOW}⚠${RESET}  $1"; }
+err()  { echo -e "  ${RED}✗${RESET} $1"; }
+step() { echo -e "\n${CYAN}▶ ${BOLD}$1${RESET}"; }
+
+_commit_push() {
+  local msg="$1"
+  cd "$DOTFILES"
+  git diff --quiet && git diff --staged --quiet && { warn "Nothing to commit"; return; }
+  git add -A
+  git commit -m "$msg"
+  git remote | grep -q origin && git push && ok "Pushed" || warn "Push failed — committed locally"
+}
+
+cmd_brew_install() {
+  [ $# -eq 0 ] && { err "Usage: dots brew install <package>"; exit 1; }
+  step "Installing $*"
+  brew install "$@" || { err "brew install failed"; exit 1; }
+  ok "Installed"
+  step "Adding to Brewfile"
+  for pkg in "$@"; do
+    grep -q "\"$pkg\"" "$BREWFILE" && { warn "\"$pkg\" already in Brewfile"; continue; }
+    echo "brew \"$pkg\"" >> "$BREWFILE" && ok "Added brew \"$pkg\""
+  done
+  _commit_push "feat: add brew $*"
+}
+
+cmd_brew_uninstall() {
+  [ $# -eq 0 ] && { err "Usage: dots brew uninstall <package>"; exit 1; }
+  step "Uninstalling $*"
+  brew uninstall "$@" || warn "brew uninstall had errors"
+  step "Removing from Brewfile"
+  for pkg in "$@"; do
+    grep -q "brew \"$pkg\"" "$BREWFILE" || { warn "\"$pkg\" not in Brewfile"; continue; }
+    sed -i '' "/^brew \"$pkg\"/d" "$BREWFILE" && ok "Removed brew \"$pkg\""
+  done
+  _commit_push "chore: remove brew $*"
+}
+
+cmd_cask_install() {
+  [ $# -eq 0 ] && { err "Usage: dots cask install <cask>"; exit 1; }
+  step "Installing cask $*"
+  brew install --cask "$@" || { err "brew install --cask failed"; exit 1; }
+  ok "Installed"
+  step "Adding to Brewfile"
+  for cask in "$@"; do
+    grep -q "\"$cask\"" "$BREWFILE" && { warn "\"$cask\" already in Brewfile"; continue; }
+    echo "cask \"$cask\"" >> "$BREWFILE" && ok "Added cask \"$cask\""
+  done
+  _commit_push "feat: add cask $*"
+}
+
+cmd_cask_uninstall() {
+  [ $# -eq 0 ] && { err "Usage: dots cask uninstall <cask>"; exit 1; }
+  step "Uninstalling cask $*"
+  brew uninstall --cask "$@" || warn "brew uninstall had errors"
+  step "Removing from Brewfile"
+  for cask in "$@"; do
+    grep -q "cask \"$cask\"" "$BREWFILE" || { warn "\"$cask\" not in Brewfile"; continue; }
+    sed -i '' "/^cask \"$cask\"/d" "$BREWFILE" && ok "Removed cask \"$cask\""
+  done
+  _commit_push "chore: remove cask $*"
+}
+
+cmd_alias() {
+  local name="${1:-}"
+  shift
+  local command="${*:-}"
+  [ -z "$name" ] || [ -z "$command" ] && { err 'Usage: dots alias <name> "<command>"'; exit 1; }
+  local alias_file="$DOTFILES/zsh/aliases.zsh"
+  local alias_line="alias $name=\"$command\""
+  if grep -q "^alias $name=" "$alias_file"; then
+    warn "Alias '$name' exists — updating"
+    sed -i '' "/^alias $name=/c\\
+$alias_line" "$alias_file"
+  else
+    echo "$alias_line" >> "$alias_file"
+    ok "Added: $alias_line"
+  fi
+  _commit_push "feat: add alias $name"
+}
+
+cmd_sync() {
+  step "Pulling latest"
+  git -C "$DOTFILES" pull --rebase && ok "Up to date" || warn "Pull had conflicts"
+  step "Installing Brewfile packages"
+  brew bundle --file="$BREWFILE" || warn "Some packages failed"
+  step "Re-stowing packages"
   cd "$DOTFILES"
   for pkg in zsh git ssh starship claude; do
-    stow --restow "$pkg" && echo "  ✓ $pkg"
+    stow --restow "$pkg" && ok "$pkg"
   done
-  echo "Done."
+  ok "Sync complete — restart your terminal"
 }
 
-_dots_brew_add() {
-  local pkg="$1"
-  [ -z "$pkg" ] && echo "Usage: dots brew add <package>" && exit 1
-  brew install "$pkg"
-  if ! grep -q "\"$pkg\"" "$BREWFILE"; then
-    echo "brew \"$pkg\"" >> "$BREWFILE"
-    git -C "$DOTFILES" add "$BREWFILE"
-    git -C "$DOTFILES" commit -m "brew: add $pkg"
-    git -C "$DOTFILES" push
-    echo "✓ $pkg added to Brewfile and pushed"
-  fi
+cmd_status() { bash "$DOTFILES/bin/dots-status"; }
+
+cmd_edit() { "${EDITOR:-windsurf}" "$DOTFILES"; }
+
+cmd_commit() { _commit_push "${*:-chore: update dotfiles}"; }
+
+cmd_help() {
+  echo ""
+  echo -e "${BOLD}dots${RESET} — dotfiles-aware package manager"
+  echo ""
+  echo "  dots brew install <pkg>       Install + add to Brewfile + push"
+  echo "  dots brew uninstall <pkg>     Uninstall + remove from Brewfile + push"
+  echo "  dots cask install <cask>      Install cask + add to Brewfile + push"
+  echo "  dots cask uninstall <cask>    Uninstall cask + remove from Brewfile + push"
+  echo "  dots alias <name> <cmd>       Add shell alias + push"
+  echo "  dots sync                     Pull + brew bundle + re-stow"
+  echo "  dots status                   Show drift report"
+  echo "  dots edit                     Open dotfiles in \$EDITOR"
+  echo "  dots commit [message]         Commit + push pending changes"
+  echo ""
 }
 
-_dots_brew_rm() {
-  local pkg="$1"
-  [ -z "$pkg" ] && echo "Usage: dots brew rm <package>" && exit 1
-  brew uninstall "$pkg"
-  sed -i '' "/\"$pkg\"/d" "$BREWFILE"
-  git -C "$DOTFILES" add "$BREWFILE"
-  git -C "$DOTFILES" commit -m "brew: remove $pkg"
-  git -C "$DOTFILES" push
-  echo "✓ $pkg removed from Brewfile and pushed"
-}
-
-case "$1" in
-  sync)    _dots_sync ;;
-  status)  "$DOTFILES/bin/dots-status" ;;
+case "${1:-help}" in
   brew)
-    case "$2" in
-      add) _dots_brew_add "$3" ;;
-      rm)  _dots_brew_rm "$3" ;;
-      *)   echo "Usage: dots brew <add|rm> <package>" ;;
-    esac
-    ;;
-  *)
-    echo "Usage: dots <sync|status|brew <add|rm> <pkg>>"
-    ;;
+    subcmd="${2:-}"; shift 2 2>/dev/null || shift $# 2>/dev/null
+    case "$subcmd" in
+      install)   cmd_brew_install "$@" ;;
+      uninstall) cmd_brew_uninstall "$@" ;;
+      *) err "Unknown: dots brew <install|uninstall>" ;;
+    esac ;;
+  cask)
+    subcmd="${2:-}"; shift 2 2>/dev/null || shift $# 2>/dev/null
+    case "$subcmd" in
+      install)   cmd_cask_install "$@" ;;
+      uninstall) cmd_cask_uninstall "$@" ;;
+      *) err "Unknown: dots cask <install|uninstall>" ;;
+    esac ;;
+  alias)   shift; cmd_alias "$@" ;;
+  sync)    cmd_sync ;;
+  status)  cmd_status ;;
+  edit)    cmd_edit ;;
+  commit)  shift; cmd_commit "$@" ;;
+  help|--help|-h) cmd_help ;;
+  *) err "Unknown command: $1"; cmd_help; exit 1 ;;
 esac
