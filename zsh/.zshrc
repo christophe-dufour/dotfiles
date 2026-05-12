@@ -31,5 +31,8 @@ $DOTFILES/bin/dots-status
 # Machine-specific overrides
 [ -f ~/.zshrc.local ] && source ~/.zshrc.local
 
+# direnv — must be before starship
+eval "$(direnv hook zsh)"
+
 # Prompt — must be last
 eval "$(starship init zsh)"
