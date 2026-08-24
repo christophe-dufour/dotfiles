@@ -1,0 +1,16 @@
+#!/bin/zsh
+osascript <<'EOF'
+tell application "iTerm2"
+  tell current window
+    tell current tab
+      tell current session
+        write text "cd ~/Code/leplein-plans"
+        set s2 to (split horizontally with default profile)
+      end tell
+      tell s2
+        write text "cd ~/Code/leplein-apps"
+      end tell
+    end tell
+  end tell
+end tell
+EOF

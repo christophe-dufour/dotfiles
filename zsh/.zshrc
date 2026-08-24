@@ -36,3 +36,24 @@ eval "$(direnv hook zsh)"
 
 # Prompt — must be last
 eval "$(starship init zsh)"
+
+# Added by Windsurf
+export PATH="/Users/christophe/.codeium/windsurf/bin:$PATH"
+
+# iTerm2 profile switching based on working directory
+function chpwd() {
+  case $PWD in
+    ~/Code/leplein-apps*)
+      echo -ne "\033]1337;SetProfile=Default\a"
+      ;;
+    ~/Code/leplein-emp-backbone*)
+      echo -ne "\033]1337;SetProfile=leplein-backbone\a"
+      ;;
+    ~/Code/leplein-plans*)
+      echo -ne "\033]1337;SetProfile=Default\a"
+      ;;
+    *)
+      echo -ne "\033]1337;SetProfile=Default\a"
+      ;;
+  esac
+}

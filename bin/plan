@@ -1,0 +1,68 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+PLAN_REPO="/Users/christophe/Code/leplein-plans"
+INPUT="${1:-}"
+
+if [ -z "$INPUT" ]; then
+    echo "Usage: plan <ticket-id-or-branch>"
+    echo "  Examples: plan DEV-1533"
+    echo "            plan feature/dev-1533-some-title"
+    exit 1
+fi
+
+# Extract ticket ID from input (handles both DEV-1533 and feature/dev-1533-title)
+TICKET_ID=$(echo "$INPUT" | grep -oiE 'dev-[0-9]+' | head -1 | tr '[:lower:]' '[:upper:]')
+if [ -z "$TICKET_ID" ]; then
+    echo "Error: could not extract a DEV-XXXX ticket ID from '$INPUT'"
+    exit 1
+fi
+
+# Get branch name: use input directly if it looks like a branch, else fetch from Linear
+if [[ "$INPUT" == *"/"* ]] || [[ "$INPUT" != "$TICKET_ID" ]]; then
+    BRANCH="$INPUT"
+else
+    echo "Fetching branch name for $TICKET_ID from Linear..."
+    BRANCH=$(linear issue view "$TICKET_ID" --json 2>/dev/null | python3 -c "import json,sys; print(json.load(sys.stdin)['branchName'])" 2>/dev/null || echo "")
+    if [ -z "$BRANCH" ]; then
+        echo "Error: could not fetch branch name from Linear for $TICKET_ID"
+        exit 1
+    fi
+fi
+
+echo "Ticket : $TICKET_ID"
+echo "Branch : $BRANCH"
+echo ""
+
+# Go to plan repo
+cd "$PLAN_REPO"
+
+# Check for uncommitted changes
+if ! git diff --quiet || ! git diff --cached --quiet; then
+    echo "Error: uncommitted changes in $PLAN_REPO — commit or stash before continuing"
+    git status --short
+    exit 1
+fi
+
+# Check for unpushed commits (only when an upstream exists)
+UPSTREAM=$(git rev-parse --abbrev-ref --symbolic-full-name '@{u}' 2>/dev/null || echo "")
+if [ -n "$UPSTREAM" ]; then
+    UNPUSHED=$(git rev-list "@{u}..HEAD" --count 2>/dev/null || echo "0")
+    if [ "$UNPUSHED" -gt 0 ]; then
+        echo "Error: $UNPUSHED unpushed commit(s) on current branch — push before continuing"
+        exit 1
+    fi
+fi
+
+# Switch to main and pull
+git checkout main
+git pull
+
+# Create and switch to the new branch
+git checkout -b "$BRANCH"
+
+echo ""
+echo "Launching Claude Code with /start $TICKET_ID ..."
+echo ""
+
+claude "/start $TICKET_ID"

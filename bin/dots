@@ -112,13 +112,15 @@ cmd_sync() {
   brew bundle --file="$BREWFILE" || warn "Some packages failed"
   step "Re-stowing packages"
   cd "$DOTFILES"
-  for pkg in zsh git ssh starship claude; do
+  for pkg in zsh git ssh starship claude launchagents; do
     stow --restow "$pkg" && ok "$pkg"
   done
   ok "Sync complete — restart your terminal"
 }
 
 cmd_status() { bash "$DOTFILES/bin/dots-status"; }
+
+cmd_secrets() { bash "$DOTFILES/bin/dots-secrets" "${1:-status}"; }
 
 cmd_edit() { "${EDITOR:-windsurf}" "$DOTFILES"; }
 
@@ -135,6 +137,9 @@ cmd_help() {
   echo "  dots alias <name> <cmd>       Add shell alias + push"
   echo "  dots sync                     Pull + brew bundle + re-stow"
   echo "  dots status                   Show drift report"
+  echo "  dots secrets push             Upload SSH keys/sops key/configs to 1Password"
+  echo "  dots secrets pull             Download secrets from 1Password to this machine"
+  echo "  dots secrets status           Compare local secrets vs 1Password"
   echo "  dots edit                     Open dotfiles in \$EDITOR"
   echo "  dots commit [message]         Commit + push pending changes"
   echo ""
@@ -158,6 +163,7 @@ case "${1:-help}" in
   alias)   shift; cmd_alias "$@" ;;
   sync)    cmd_sync ;;
   status)  cmd_status ;;
+  secrets) shift; cmd_secrets "$@" ;;
   edit)    cmd_edit ;;
   commit)  shift; cmd_commit "$@" ;;
   help|--help|-h) cmd_help ;;

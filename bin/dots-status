@@ -108,6 +108,33 @@ if [ "${broken:-0}" -gt 0 ]; then
   hints+=("  run: ${CYAN}dots sync${RESET}")
 fi
 
+# ── 6. 1Password secrets drift (cached — background, needs op signed in) ─────
+SECRETS_CACHE="$CACHE_DIR/secrets-drift"
+if [ -f "$SECRETS_CACHE" ]; then
+  secrets_mtime=$(stat -f %m "$SECRETS_CACHE" 2>/dev/null || echo 0)
+  secrets_age=$(( now - secrets_mtime ))
+  if [ "$secrets_age" -lt "$CACHE_TTL" ]; then
+    secrets_issue=$(cat "$SECRETS_CACHE")
+    [ -n "$secrets_issue" ] && {
+      issues+=("${YELLOW}⚠${RESET}  $secrets_issue")
+      hints+=("  run: ${CYAN}dots secrets status${RESET}")
+    }
+  fi
+fi
+
+# Re-check in background — only if op is installed and already signed in,
+# so this never blocks on a 1Password unlock prompt.
+{
+  if command -v op &>/dev/null && op whoami &>/dev/null; then
+    drifted=$(bash "$DOTFILES/bin/dots-secrets" status 2>/dev/null | grep -cE '⚠|✗')
+    if [ "${drifted:-0}" -gt 0 ]; then
+      echo "$drifted secret(s) out of sync with 1Password" > "$SECRETS_CACHE"
+    else
+      echo "" > "$SECRETS_CACHE"
+    fi
+  fi
+} &disown 2>/dev/null
+
 # ── Output ────────────────────────────────────────────────────────────────────
 [ ${#issues[@]} -eq 0 ] && exit 0
 
