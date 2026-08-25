@@ -112,7 +112,7 @@ cmd_sync() {
   brew bundle --file="$BREWFILE" || warn "Some packages failed"
   step "Re-stowing packages"
   cd "$DOTFILES"
-  for pkg in zsh git ssh starship claude launchagents; do
+  for pkg in zsh git ssh starship claude launchagents devin vscode; do
     stow --restow "$pkg" && ok "$pkg"
   done
   ok "Sync complete — restart your terminal"

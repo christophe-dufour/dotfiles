@@ -1,0 +1,23 @@
+{
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "files.autoSave": "afterDelay",
+    "[ruby]": {
+        "editor.defaultFormatter": "testdouble.vscode-standard-ruby"
+    },
+    "rubyLsp.formatter": "rubocop",
+    "rubyLsp.addonSettings": {},
+    "editor.renderWhitespace": "all",
+    "editor.renderLineHighlightOnlyWhenFocus": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "json.schemaDownload.trustedDomains": {
+        "https://schemastore.azurewebsites.net/": true,
+        "https://raw.githubusercontent.com/microsoft/vscode/": true,
+        "https://raw.githubusercontent.com/devcontainers/spec/": true,
+        "https://www.schemastore.org/": true,
+        "https://json.schemastore.org/": true,
+        "https://json-schema.org/": true,
+        "https://developer.microsoft.com/json-schemas/": true,
+        "https://biomejs.dev": true
+    }
+}

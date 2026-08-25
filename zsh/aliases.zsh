@@ -54,6 +54,3 @@ alias ports="lsof -i -P -n | grep LISTEN"
 alias reloadzsh="source $HOME/.zshrc"
 alias brewup="brew update && brew upgrade && brew cleanup"
 alias cleanup="find . -name '.DS_Store' -delete"
-
-# ── Editor ───────────────────────────────────────────────────────────────────
-alias code="windsurf"

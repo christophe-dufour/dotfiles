@@ -42,20 +42,25 @@ pause() {
   read -p "    Press Enter once done... " _
 }
 
-step "1/7 — Dotfiles bootstrap (Xcode CLI tools, Homebrew, packages, macOS defaults, Claude Code)"
+step "1/9 — Dotfiles bootstrap (Xcode CLI tools, Homebrew, packages, macOS defaults, Claude Code)"
 zsh "$DOTFILES/bootstrap.sh"
 
-step "2/7 — 1Password"
+step "2/9 — iTerm2 preferences"
+defaults import com.googlecode.iterm2 "$DOTFILES/iterm2/com.googlecode.iterm2.plist" \
+  && ok "iTerm2 preferences imported (profiles/colors/hotkey/keybindings)" \
+  || info "iTerm2 preferences import failed — restore manually from $DOTFILES/iterm2/com.googlecode.iterm2.plist"
+
+step "3/9 — 1Password"
 pause "Open the 1Password app, sign into your account, then go to
      Settings -> Developer -> enable 'Integrate with 1Password CLI'."
 
-step "3/7 — Restore secrets from 1Password (SSH keys, sops age key, rclone/AWS config, env files)"
+step "4/9 — Restore secrets from 1Password (SSH keys, sops age key, rclone/AWS config, env files)"
 bash "$DOTFILES/bin/dots-secrets" pull
 
-step "4/7 — GitHub CLI auth"
+step "5/9 — GitHub CLI auth"
 gh auth login
 
-step "5/7 — pCloud mount"
+step "6/9 — pCloud mount"
 mkdir -p "$HOME/pcloud-mount"
 launchctl load "$HOME/Library/LaunchAgents/com.rclone.pcloud.plist" 2>/dev/null
 sleep 2
@@ -65,7 +70,7 @@ else
   info "pCloud mount not up yet — check /tmp/rclone-pcloud.err (needs rclone.conf from step 3)"
 fi
 
-step "6/7 — Restore personal files from external drive ($EXTERNAL_DRIVE)"
+step "7/9 — Restore personal files from external drive ($EXTERNAL_DRIVE)"
 if [ -d "$EXTERNAL_DRIVE" ]; then
   for dir in Desktop Documents Downloads Music; do
     if [ -d "$EXTERNAL_DRIVE/$dir" ]; then
@@ -90,7 +95,23 @@ else
   info "  EXTERNAL_DRIVE=/Volumes/<name> ./get-started.sh"
 fi
 
-step "7/7 — Verify"
+step "8/9 — Devin extensions"
+info "Launching Devin once so it self-installs its CLI to ~/.codeium/windsurf/bin..."
+open -a "Devin" 2>/dev/null
+for i in $(seq 1 15); do
+  [ -x "$HOME/.codeium/windsurf/bin/devin" ] && break
+  sleep 2
+done
+if [ -x "$HOME/.codeium/windsurf/bin/devin" ]; then
+  for ext in anthropic.claude-code biomejs.biome bradlc.vscode-tailwindcss; do
+    "$HOME/.codeium/windsurf/bin/devin" --install-extension "$ext" && ok "$ext"
+  done
+else
+  info "Devin CLI never appeared — install these manually inside Devin:"
+  info "  anthropic.claude-code, biomejs.biome, bradlc.vscode-tailwindcss"
+fi
+
+step "9/9 — Verify"
 bash "$DOTFILES/bin/dots-status"
 bash "$DOTFILES/bin/dots-secrets" status
 

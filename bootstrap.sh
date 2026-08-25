@@ -29,7 +29,7 @@ fi
 cd ~/.dotfiles
 
 # ── Stow packages ─────────────────────────────────────────────────────────────
-for pkg in zsh git ssh starship claude launchagents; do
+for pkg in zsh git ssh starship claude launchagents devin vscode; do
   stow "$pkg" && echo "✓ $pkg"
 done
 
