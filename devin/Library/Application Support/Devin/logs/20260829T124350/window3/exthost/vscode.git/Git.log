@@ -1,5 +1,0 @@
-2026-08-31 14:26:17.325 [info] [main] Log level: Info
-2026-08-31 14:26:17.326 [info] [main] Validating found git in: "/usr/bin/git"
-2026-08-31 14:26:17.357 [info] [main] Using git "2.39.5 (Apple Git-154)" from "/usr/bin/git"
-2026-08-31 14:26:17.357 [info] [Model][doInitialScan] Initial repository scan started
-2026-08-31 14:26:17.358 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (0)
