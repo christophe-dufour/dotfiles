@@ -78,3 +78,4 @@ vscode "testdouble.vscode-standard-ruby"
 # not present immediately after `brew install --cask`).
 # anthropic.claude-code, biomejs.biome, bradlc.vscode-tailwindcss
 brew "--cask"
+brew "claude-code"

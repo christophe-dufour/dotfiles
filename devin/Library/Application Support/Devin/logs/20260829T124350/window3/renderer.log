@@ -109,3 +109,7 @@ DELTA: browser
 	at Timeout.<anonymous> (/Applications/Devin.app/Contents/Resources/app/extensions/windsurf/dist/extension.js:2:565203)
 	at listOnTimeout (node:internal/timers:605:17)
 	at process.processTimers (node:internal/timers:541:7)
+2026-08-31 15:54:24.155 [error] [Extension Host] FetchError: Unleash Repository error: network timeout at: https://unleash.codeium.com/api/client/features
+	at Timeout.<anonymous> (/Applications/Devin.app/Contents/Resources/app/extensions/windsurf/dist/extension.js:2:565203)
+	at listOnTimeout (node:internal/timers:605:17)
+	at process.processTimers (node:internal/timers:541:7)
