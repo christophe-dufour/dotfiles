@@ -1,0 +1,111 @@
+2026-08-31 14:26:16.722 [info] Started local extension host with pid 61718.
+2026-08-31 14:26:16.727 [error] Extension 'ms-vscode.js-debug' appears in product.json but enables LESS API proposals than the extension wants.
+package.json (LOSES): portsAttributes
+workspaceTrust
+tunnels
+browser
+product.json (WINS): portsAttributes
+findTextInFiles
+workspaceTrust
+tunnels
+DELTA: browser
+2026-08-31 14:26:16.740 [warning] [codeium.windsurf]: Cannot register 'windsurf.marketplaceExtensionGalleryServiceURL'. This property is already registered.
+2026-08-31 14:26:16.740 [warning] [codeium.windsurf]: Cannot register 'windsurf.marketplaceGalleryItemURL'. This property is already registered.
+2026-08-31 14:26:16.884 [info] [DiffZone] BaselineResolution init, 0 existing repos
+2026-08-31 14:26:16.884 [info] [AccountPolicyGate] apply: state=inactive, reason=undefined, isRestricted=false
+2026-08-31 14:26:17.296 [error] [Extension Host] (node:61718) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `Devin Helper (Plugin) --trace-deprecation ...` to show where the warning was created)
+2026-08-31 14:26:19.545 [info] [perf] Render performance baseline is 11ms
+2026-08-31 14:26:21.886 [info] [AccountPolicyGate] apply: state=inactive, reason=undefined, isRestricted=false
+2026-08-31 14:27:27.009 [error] [Extension Host] FetchError: Unleash Repository error: network timeout at: https://unleash.codeium.com/api/client/features
+	at Timeout.<anonymous> (/Applications/Devin.app/Contents/Resources/app/extensions/windsurf/dist/extension.js:2:565203)
+	at listOnTimeout (node:internal/timers:605:17)
+	at process.processTimers (node:internal/timers:541:7)
+2026-08-31 14:28:36.034 [error] [Extension Host] FetchError: Unleash Repository error: network timeout at: https://unleash.codeium.com/api/client/features
+	at Timeout.<anonymous> (/Applications/Devin.app/Contents/Resources/app/extensions/windsurf/dist/extension.js:2:565203)
+	at listOnTimeout (node:internal/timers:605:17)
+	at process.processTimers (node:internal/timers:541:7)
+2026-08-31 14:29:45.050 [error] [Extension Host] FetchError: Unleash Repository error: network timeout at: https://unleash.codeium.com/api/client/features
+	at Timeout.<anonymous> (/Applications/Devin.app/Contents/Resources/app/extensions/windsurf/dist/extension.js:2:565203)
+	at listOnTimeout (node:internal/timers:605:17)
+	at process.processTimers (node:internal/timers:541:7)
+2026-08-31 14:37:57.230 [error] [Extension Host] FetchError: Unleash Repository error: network timeout at: https://unleash.codeium.com/api/client/features
+	at Timeout.<anonymous> (/Applications/Devin.app/Contents/Resources/app/extensions/windsurf/dist/extension.js:2:565203)
+	at listOnTimeout (node:internal/timers:605:17)
+	at process.processTimers (node:internal/timers:541:7)
+2026-08-31 14:40:07.024 [error] [Extension Host] FetchError: Unleash Repository error: network timeout at: https://unleash.codeium.com/api/client/features
+	at Timeout.<anonymous> (/Applications/Devin.app/Contents/Resources/app/extensions/windsurf/dist/extension.js:2:565203)
+	at listOnTimeout (node:internal/timers:605:17)
+	at process.processTimers (node:internal/timers:541:7)
+2026-08-31 14:41:16.046 [error] [Extension Host] FetchError: Unleash Repository error: network timeout at: https://unleash.codeium.com/api/client/features
+	at Timeout.<anonymous> (/Applications/Devin.app/Contents/Resources/app/extensions/windsurf/dist/extension.js:2:565203)
+	at listOnTimeout (node:internal/timers:605:17)
+	at process.processTimers (node:internal/timers:541:7)
+2026-08-31 14:49:27.998 [error] [Extension Host] FetchError: Unleash Repository error: network timeout at: https://unleash.codeium.com/api/client/features
+	at Timeout.<anonymous> (/Applications/Devin.app/Contents/Resources/app/extensions/windsurf/dist/extension.js:2:565203)
+	at listOnTimeout (node:internal/timers:605:17)
+	at process.processTimers (node:internal/timers:541:7)
+2026-08-31 14:50:37.018 [error] [Extension Host] FetchError: Unleash Repository error: network timeout at: https://unleash.codeium.com/api/client/features
+	at Timeout.<anonymous> (/Applications/Devin.app/Contents/Resources/app/extensions/windsurf/dist/extension.js:2:565203)
+	at listOnTimeout (node:internal/timers:605:17)
+	at process.processTimers (node:internal/timers:541:7)
+2026-08-31 14:51:46.036 [error] [Extension Host] FetchError: Unleash Repository error: network timeout at: https://unleash.codeium.com/api/client/features
+	at Timeout.<anonymous> (/Applications/Devin.app/Contents/Resources/app/extensions/windsurf/dist/extension.js:2:565203)
+	at listOnTimeout (node:internal/timers:605:17)
+	at process.processTimers (node:internal/timers:541:7)
+2026-08-31 14:52:55.054 [error] [Extension Host] FetchError: Unleash Repository error: network timeout at: https://unleash.codeium.com/api/client/features
+	at Timeout.<anonymous> (/Applications/Devin.app/Contents/Resources/app/extensions/windsurf/dist/extension.js:2:565203)
+	at listOnTimeout (node:internal/timers:605:17)
+	at process.processTimers (node:internal/timers:541:7)
+2026-08-31 14:54:04.082 [error] [Extension Host] FetchError: Unleash Repository error: network timeout at: https://unleash.codeium.com/api/client/features
+	at Timeout.<anonymous> (/Applications/Devin.app/Contents/Resources/app/extensions/windsurf/dist/extension.js:2:565203)
+	at listOnTimeout (node:internal/timers:605:17)
+	at process.processTimers (node:internal/timers:541:7)
+2026-08-31 14:55:13.105 [error] [Extension Host] FetchError: Unleash Repository error: network timeout at: https://unleash.codeium.com/api/client/features
+	at Timeout.<anonymous> (/Applications/Devin.app/Contents/Resources/app/extensions/windsurf/dist/extension.js:2:565203)
+	at listOnTimeout (node:internal/timers:605:17)
+	at process.processTimers (node:internal/timers:541:7)
+2026-08-31 14:56:22.124 [error] [Extension Host] FetchError: Unleash Repository error: network timeout at: https://unleash.codeium.com/api/client/features
+	at Timeout.<anonymous> (/Applications/Devin.app/Contents/Resources/app/extensions/windsurf/dist/extension.js:2:565203)
+	at listOnTimeout (node:internal/timers:605:17)
+	at process.processTimers (node:internal/timers:541:7)
+2026-08-31 14:57:31.145 [error] [Extension Host] FetchError: Unleash Repository error: network timeout at: https://unleash.codeium.com/api/client/features
+	at Timeout.<anonymous> (/Applications/Devin.app/Contents/Resources/app/extensions/windsurf/dist/extension.js:2:565203)
+	at listOnTimeout (node:internal/timers:605:17)
+	at process.processTimers (node:internal/timers:541:7)
+2026-08-31 15:00:42.390 [error] [Extension Host] FetchError: Unleash Repository error: network timeout at: https://unleash.codeium.com/api/client/features
+	at Timeout.<anonymous> (/Applications/Devin.app/Contents/Resources/app/extensions/windsurf/dist/extension.js:2:565203)
+	at listOnTimeout (node:internal/timers:605:17)
+	at process.processTimers (node:internal/timers:541:7)
+2026-08-31 15:01:51.409 [error] [Extension Host] FetchError: Unleash Repository error: network timeout at: https://unleash.codeium.com/api/client/features
+	at Timeout.<anonymous> (/Applications/Devin.app/Contents/Resources/app/extensions/windsurf/dist/extension.js:2:565203)
+	at listOnTimeout (node:internal/timers:605:17)
+	at process.processTimers (node:internal/timers:541:7)
+2026-08-31 15:14:06.327 [error] [Extension Host] FetchError: Unleash Repository error: network timeout at: https://unleash.codeium.com/api/client/features
+	at Timeout.<anonymous> (/Applications/Devin.app/Contents/Resources/app/extensions/windsurf/dist/extension.js:2:565203)
+	at listOnTimeout (node:internal/timers:605:17)
+	at process.processTimers (node:internal/timers:541:7)
+2026-08-31 15:15:15.343 [error] [Extension Host] FetchError: Unleash Repository error: network timeout at: https://unleash.codeium.com/api/client/features
+	at Timeout.<anonymous> (/Applications/Devin.app/Contents/Resources/app/extensions/windsurf/dist/extension.js:2:565203)
+	at listOnTimeout (node:internal/timers:605:17)
+	at process.processTimers (node:internal/timers:541:7)
+2026-08-31 15:16:24.361 [error] [Extension Host] FetchError: Unleash Repository error: network timeout at: https://unleash.codeium.com/api/client/features
+	at Timeout.<anonymous> (/Applications/Devin.app/Contents/Resources/app/extensions/windsurf/dist/extension.js:2:565203)
+	at listOnTimeout (node:internal/timers:605:17)
+	at process.processTimers (node:internal/timers:541:7)
+2026-08-31 15:34:41.420 [error] [Extension Host] FetchError: Unleash Repository error: network timeout at: https://unleash.codeium.com/api/client/features
+	at Timeout.<anonymous> (/Applications/Devin.app/Contents/Resources/app/extensions/windsurf/dist/extension.js:2:565203)
+	at listOnTimeout (node:internal/timers:605:17)
+	at process.processTimers (node:internal/timers:541:7)
+2026-08-31 15:35:50.436 [error] [Extension Host] FetchError: Unleash Repository error: network timeout at: https://unleash.codeium.com/api/client/features
+	at Timeout.<anonymous> (/Applications/Devin.app/Contents/Resources/app/extensions/windsurf/dist/extension.js:2:565203)
+	at listOnTimeout (node:internal/timers:605:17)
+	at process.processTimers (node:internal/timers:541:7)
+2026-08-31 15:46:03.645 [error] [Extension Host] FetchError: Unleash Repository error: network timeout at: https://unleash.codeium.com/api/client/features
+	at Timeout.<anonymous> (/Applications/Devin.app/Contents/Resources/app/extensions/windsurf/dist/extension.js:2:565203)
+	at listOnTimeout (node:internal/timers:605:17)
+	at process.processTimers (node:internal/timers:541:7)
+2026-08-31 15:47:12.663 [error] [Extension Host] FetchError: Unleash Repository error: network timeout at: https://unleash.codeium.com/api/client/features
+	at Timeout.<anonymous> (/Applications/Devin.app/Contents/Resources/app/extensions/windsurf/dist/extension.js:2:565203)
+	at listOnTimeout (node:internal/timers:605:17)
+	at process.processTimers (node:internal/timers:541:7)

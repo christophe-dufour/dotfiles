@@ -1,0 +1,3 @@
+2026-08-29 12:43:52.006 [info] Started initializing default profile extensions in extensions installation folder. file:///Users/christophe/.devin/extensions
+2026-08-29 12:43:52.031 [warning] Failed to create default profile extensions manifest in extensions installation folder. file:///Users/christophe/.devin/extensions Unable to create file 'vscode-userdata:/Users/christophe/.devin/extensions/extensions.json' that already exists when overwrite flag is not set
+2026-08-29 12:43:52.031 [info] Completed initializing default profile extensions in extensions installation folder. file:///Users/christophe/.devin/extensions

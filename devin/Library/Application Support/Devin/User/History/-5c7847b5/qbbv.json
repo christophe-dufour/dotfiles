@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "leplein-apps",
+			"path": "/Users/christophe/Code/leplein-apps"
+		}
+	],
+	"windsurfPrewarmed": true,
+	"settings": {
+		"typescript.enablePromptUseWorkspaceTsdk": true
+	},
+	"workbenchMode": "windsurf-agent-window"
+}

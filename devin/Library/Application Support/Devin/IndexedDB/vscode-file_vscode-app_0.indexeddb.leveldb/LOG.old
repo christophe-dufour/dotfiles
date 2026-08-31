@@ -1,0 +1,7 @@
+2026/08/31-01:29:16.880 12688 Reusing MANIFEST /Users/christophe/Library/Application Support/Devin/IndexedDB/vscode-file_vscode-app_0.indexeddb.leveldb/MANIFEST-000001
+2026/08/31-01:29:16.880 12688 Recovering log #3
+2026/08/31-01:29:16.881 12688 Reusing old log /Users/christophe/Library/Application Support/Devin/IndexedDB/vscode-file_vscode-app_0.indexeddb.leveldb/000003.log 
+2026/08/31-10:57:24.911 1268a Level-0 table #5: started
+2026/08/31-10:57:24.916 1268a Level-0 table #5: 1201407 bytes OK
+2026/08/31-10:57:24.918 1268a Delete type=0 #3
+2026/08/31-10:57:24.919 1268a Manual compaction at level-0 from (begin) .. (end); will stop at (end)

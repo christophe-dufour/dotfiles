@@ -1,0 +1,66 @@
+2026-08-29 12:44:34.812 [info] acp feature flags (provisional, awaiting auth): acpCustom=false
+2026-08-29 12:44:34.813 [info] acp feature flags (after context update): acpCustom=false
+2026-08-29 12:44:34.845 [info] Orphan cleanup: no orphaned devin acp agents found
+2026-08-29 12:44:35.728 [info] acp feature flags (after auth state update): acpCustom=true
+2026-08-29 12:44:35.728 [info] acp-custom-enabled flipped; reloading ACP registries.
+2026-08-29 12:44:35.728 [info] acp feature flags (resolved from auth state): acpCustom=true
+2026-08-29 12:44:35.741 [info] Error loading local registry: EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, open '/Users/christophe/.windsurf/acp/registry.json'
+2026-08-29 12:44:35.758 [info] acp feature flags (after auth state update): acpCustom=true
+2026-08-29 12:44:35.841 [info] acp feature flags (after auth state update): acpCustom=true
+2026-08-29 12:44:36.146 [info] acp feature flags (after auth state update): acpCustom=true
+2026-08-29 12:44:36.681 [info] acp feature flags (after context update): acpCustom=true
+2026-08-29 12:44:37.913 [info] acp feature flags (after auth state update): acpCustom=true
+2026-08-29 12:44:37.929 [info] acp feature flags (after auth state update): acpCustom=true
+2026-08-29 12:44:37.933 [info] acp feature flags (after context update): acpCustom=true
+2026-08-29 12:44:37.933 [info] acp feature flags (after context update): acpCustom=true
+2026-08-29 12:44:38.161 [info] acp feature flags (after auth state update): acpCustom=true
+2026-08-29 12:44:38.162 [info] acp feature flags (after context update): acpCustom=true
+2026-08-29 12:44:38.508 [info] Registering agent "devin-cli"
+2026-08-29 12:44:38.508 [info] [devin-cli] Registering provider with host
+2026-08-29 12:44:38.508 [info] [devin-cli] Spawning process: /Applications/Devin.app/Contents/Resources/app/extensions/windsurf/devin/bin/devin acp
+2026-08-29 12:44:38.508 [info] Registering agent "devin-cloud"
+2026-08-29 12:44:38.508 [info] Registering agent "summary-agent"
+2026-08-29 12:44:38.508 [info] [summary-agent] Registering provider with host
+2026-08-29 12:44:38.508 [info] [summary-agent] Spawning process: /Applications/Devin.app/Contents/Resources/app/extensions/windsurf/devin/bin/devin acp --agent-type summarizer
+2026-08-29 12:44:38.509 [info] Registering agent "claude-acp"
+2026-08-29 12:44:38.509 [info] Registering agent "codex-acp"
+2026-08-29 12:44:38.509 [info] Registering agent "agoragentic-acp"
+2026-08-29 12:44:38.509 [info] Registering agent "amp-acp"
+2026-08-29 12:44:38.509 [info] Registering agent "antigravity-acp"
+2026-08-29 12:44:38.509 [info] Registering agent "auggie"
+2026-08-29 12:44:38.509 [info] Registering agent "autohand"
+2026-08-29 12:44:38.509 [info] Registering agent "cline"
+2026-08-29 12:44:38.509 [info] Registering agent "codebuddy-code"
+2026-08-29 12:44:38.509 [info] Registering agent "cortex-code"
+2026-08-29 12:44:38.509 [info] Registering agent "corust-agent"
+2026-08-29 12:44:38.509 [info] Registering agent "crow-cli"
+2026-08-29 12:44:38.509 [info] Registering agent "cursor"
+2026-08-29 12:44:38.509 [info] Registering agent "deepagents"
+2026-08-29 12:44:38.509 [info] Registering agent "dimcode"
+2026-08-29 12:44:38.509 [info] Registering agent "dirac"
+2026-08-29 12:44:38.509 [info] Registering agent "factory-droid"
+2026-08-29 12:44:38.509 [info] Registering agent "fast-agent"
+2026-08-29 12:44:38.509 [info] Registering agent "gemini"
+2026-08-29 12:44:38.509 [info] Registering agent "github-copilot-cli"
+2026-08-29 12:44:38.509 [info] Registering agent "glm-acp-agent"
+2026-08-29 12:44:38.509 [info] Registering agent "goose"
+2026-08-29 12:44:38.509 [info] Registering agent "grok-build"
+2026-08-29 12:44:38.509 [info] Registering agent "harn"
+2026-08-29 12:44:38.509 [info] Registering agent "junie"
+2026-08-29 12:44:38.509 [info] Registering agent "kilo"
+2026-08-29 12:44:38.509 [info] Registering agent "kimi"
+2026-08-29 12:44:38.509 [info] Registering agent "minion-code"
+2026-08-29 12:44:38.509 [info] Registering agent "mistral-vibe"
+2026-08-29 12:44:38.509 [info] Registering agent "nova"
+2026-08-29 12:44:38.509 [info] Registering agent "opencode"
+2026-08-29 12:44:38.509 [info] Registering agent "pi-acp"
+2026-08-29 12:44:38.509 [info] Registering agent "poolside"
+2026-08-29 12:44:38.509 [info] Registering agent "qoder"
+2026-08-29 12:44:38.509 [info] Registering agent "qwen-code"
+2026-08-29 12:44:38.509 [info] Registering agent "sigit"
+2026-08-29 12:44:38.509 [info] Registering agent "stakpak"
+2026-08-29 12:44:38.509 [info] Registering agent "vtcode"
+2026-08-29 12:44:41.081 [info] [devin-cli] Authenticated bundled agent with Devin API key
+2026-08-29 12:44:41.081 [info] [devin-cli] Initialization complete
+2026-08-29 12:44:41.082 [info] [summary-agent] Authenticated bundled agent with Devin API key
+2026-08-29 12:44:41.082 [info] [summary-agent] Initialization complete

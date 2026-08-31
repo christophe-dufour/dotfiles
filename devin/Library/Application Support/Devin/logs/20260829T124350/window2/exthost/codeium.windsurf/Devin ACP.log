@@ -1,0 +1,271 @@
+2026-08-31 01:29:19.361 [info] acp feature flags (provisional, awaiting auth): acpCustom=false
+2026-08-31 01:29:19.397 [info] Orphan cleanup: no orphaned devin acp agents found
+2026-08-31 01:29:20.811 [info] acp feature flags (after auth state update): acpCustom=true
+2026-08-31 01:29:20.811 [info] acp-custom-enabled flipped; reloading ACP registries.
+2026-08-31 01:29:20.811 [info] acp feature flags (resolved from auth state): acpCustom=true
+2026-08-31 01:29:20.816 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 01:29:20.844 [info] acp feature flags (after auth state update): acpCustom=true
+2026-08-31 01:29:20.844 [info] Error loading local registry: EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, open '/Users/christophe/.windsurf/acp/registry.json'
+2026-08-31 01:29:20.849 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 01:29:21.051 [info] Registering agent "devin-cli"
+2026-08-31 01:29:21.051 [info] [devin-cli] Registering provider with host
+2026-08-31 01:29:21.051 [info] [devin-cli] Spawning process: /Applications/Devin.app/Contents/Resources/app/extensions/windsurf/devin/bin/devin acp
+2026-08-31 01:29:21.051 [info] Registering agent "devin-cloud"
+2026-08-31 01:29:21.051 [info] Registering agent "summary-agent"
+2026-08-31 01:29:21.051 [info] [summary-agent] Registering provider with host
+2026-08-31 01:29:21.051 [info] [summary-agent] Spawning process: /Applications/Devin.app/Contents/Resources/app/extensions/windsurf/devin/bin/devin acp --agent-type summarizer
+2026-08-31 01:29:21.051 [info] Registering agent "claude-acp"
+2026-08-31 01:29:21.051 [info] Registering agent "codex-acp"
+2026-08-31 01:29:21.051 [info] Registering agent "agoragentic-acp"
+2026-08-31 01:29:21.051 [info] Registering agent "amp-acp"
+2026-08-31 01:29:21.051 [info] Registering agent "antigravity-acp"
+2026-08-31 01:29:21.051 [info] Registering agent "auggie"
+2026-08-31 01:29:21.051 [info] Registering agent "autohand"
+2026-08-31 01:29:21.051 [info] Registering agent "cline"
+2026-08-31 01:29:21.051 [info] Registering agent "codebuddy-code"
+2026-08-31 01:29:21.051 [info] Registering agent "cortex-code"
+2026-08-31 01:29:21.051 [info] Registering agent "corust-agent"
+2026-08-31 01:29:21.051 [info] Registering agent "crow-cli"
+2026-08-31 01:29:21.051 [info] Registering agent "cursor"
+2026-08-31 01:29:21.051 [info] Registering agent "deepagents"
+2026-08-31 01:29:21.051 [info] Registering agent "dimcode"
+2026-08-31 01:29:21.051 [info] Registering agent "dirac"
+2026-08-31 01:29:21.051 [info] Registering agent "factory-droid"
+2026-08-31 01:29:21.051 [info] Registering agent "fast-agent"
+2026-08-31 01:29:21.051 [info] Registering agent "gemini"
+2026-08-31 01:29:21.051 [info] Registering agent "github-copilot-cli"
+2026-08-31 01:29:21.051 [info] Registering agent "glm-acp-agent"
+2026-08-31 01:29:21.051 [info] Registering agent "goose"
+2026-08-31 01:29:21.051 [info] Registering agent "grok-build"
+2026-08-31 01:29:21.051 [info] Registering agent "harn"
+2026-08-31 01:29:21.051 [info] Registering agent "junie"
+2026-08-31 01:29:21.051 [info] Registering agent "kilo"
+2026-08-31 01:29:21.051 [info] Registering agent "kimi"
+2026-08-31 01:29:21.051 [info] Registering agent "minion-code"
+2026-08-31 01:29:21.051 [info] Registering agent "mistral-vibe"
+2026-08-31 01:29:21.051 [info] Registering agent "nova"
+2026-08-31 01:29:21.051 [info] Registering agent "opencode"
+2026-08-31 01:29:21.051 [info] Registering agent "pi-acp"
+2026-08-31 01:29:21.051 [info] Registering agent "poolside"
+2026-08-31 01:29:21.051 [info] Registering agent "qoder"
+2026-08-31 01:29:21.051 [info] Registering agent "qwen-code"
+2026-08-31 01:29:21.051 [info] Registering agent "sigit"
+2026-08-31 01:29:21.051 [info] Registering agent "stakpak"
+2026-08-31 01:29:21.051 [info] Registering agent "vtcode"
+2026-08-31 01:29:21.403 [info] acp feature flags (after auth state update): acpCustom=true
+2026-08-31 01:29:21.404 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 01:29:22.189 [info] [devin-cli] Authenticated bundled agent with Devin API key
+2026-08-31 01:29:22.189 [info] [devin-cli] Initialization complete
+2026-08-31 01:29:22.308 [info] [summary-agent] Authenticated bundled agent with Devin API key
+2026-08-31 01:29:22.308 [info] [summary-agent] Initialization complete
+2026-08-31 01:29:33.610 [info] acp feature flags (provisional, awaiting auth): acpCustom=false
+2026-08-31 01:29:33.635 [info] Orphan cleanup: no orphaned devin acp agents found
+2026-08-31 01:29:34.427 [info] acp feature flags (after auth state update): acpCustom=true
+2026-08-31 01:29:34.427 [info] acp-custom-enabled flipped; reloading ACP registries.
+2026-08-31 01:29:34.428 [info] acp feature flags (resolved from auth state): acpCustom=true
+2026-08-31 01:29:34.434 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 01:29:34.469 [info] acp feature flags (after auth state update): acpCustom=true
+2026-08-31 01:29:34.469 [info] Error loading local registry: EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, open '/Users/christophe/.windsurf/acp/registry.json'
+2026-08-31 01:29:34.471 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 01:29:34.600 [info] Registering agent "devin-cli"
+2026-08-31 01:29:34.600 [info] Registering agent "devin-cloud"
+2026-08-31 01:29:34.600 [info] Registering agent "summary-agent"
+2026-08-31 01:29:34.600 [info] Registering agent "claude-acp"
+2026-08-31 01:29:34.600 [info] Registering agent "codex-acp"
+2026-08-31 01:29:34.600 [info] Registering agent "agoragentic-acp"
+2026-08-31 01:29:34.600 [info] Registering agent "amp-acp"
+2026-08-31 01:29:34.600 [info] Registering agent "antigravity-acp"
+2026-08-31 01:29:34.600 [info] Registering agent "auggie"
+2026-08-31 01:29:34.600 [info] Registering agent "autohand"
+2026-08-31 01:29:34.600 [info] Registering agent "cline"
+2026-08-31 01:29:34.600 [info] Registering agent "codebuddy-code"
+2026-08-31 01:29:34.600 [info] Registering agent "cortex-code"
+2026-08-31 01:29:34.600 [info] Registering agent "corust-agent"
+2026-08-31 01:29:34.600 [info] Registering agent "crow-cli"
+2026-08-31 01:29:34.600 [info] Registering agent "cursor"
+2026-08-31 01:29:34.600 [info] Registering agent "deepagents"
+2026-08-31 01:29:34.600 [info] Registering agent "dimcode"
+2026-08-31 01:29:34.600 [info] Registering agent "dirac"
+2026-08-31 01:29:34.600 [info] Registering agent "factory-droid"
+2026-08-31 01:29:34.600 [info] Registering agent "fast-agent"
+2026-08-31 01:29:34.600 [info] Registering agent "gemini"
+2026-08-31 01:29:34.600 [info] Registering agent "github-copilot-cli"
+2026-08-31 01:29:34.600 [info] Registering agent "glm-acp-agent"
+2026-08-31 01:29:34.600 [info] Registering agent "goose"
+2026-08-31 01:29:34.600 [info] Registering agent "grok-build"
+2026-08-31 01:29:34.600 [info] Registering agent "harn"
+2026-08-31 01:29:34.600 [info] Registering agent "junie"
+2026-08-31 01:29:34.600 [info] Registering agent "kilo"
+2026-08-31 01:29:34.600 [info] Registering agent "kimi"
+2026-08-31 01:29:34.600 [info] Registering agent "minion-code"
+2026-08-31 01:29:34.600 [info] Registering agent "mistral-vibe"
+2026-08-31 01:29:34.600 [info] Registering agent "nova"
+2026-08-31 01:29:34.600 [info] Registering agent "opencode"
+2026-08-31 01:29:34.600 [info] Registering agent "pi-acp"
+2026-08-31 01:29:34.600 [info] Registering agent "poolside"
+2026-08-31 01:29:34.600 [info] Registering agent "qoder"
+2026-08-31 01:29:34.600 [info] Registering agent "qwen-code"
+2026-08-31 01:29:34.600 [info] Registering agent "sigit"
+2026-08-31 01:29:34.600 [info] Registering agent "stakpak"
+2026-08-31 01:29:34.600 [info] Registering agent "vtcode"
+2026-08-31 01:29:34.778 [info] acp feature flags (after auth state update): acpCustom=true
+2026-08-31 01:29:34.779 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 01:29:44.667 [info] acp feature flags (after auth state update): acpCustom=true
+2026-08-31 01:29:44.668 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 01:29:44.688 [info] acp feature flags (after auth state update): acpCustom=true
+2026-08-31 01:29:44.693 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 01:29:44.967 [info] acp feature flags (after auth state update): acpCustom=true
+2026-08-31 01:29:44.968 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 01:30:33.614 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 01:31:33.616 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 01:48:00.810 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 02:04:23.504 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 02:21:41.155 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 02:38:16.574 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 02:55:24.256 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 03:11:41.971 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 03:21:03.208 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 03:32:26.103 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 03:50:22.666 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 04:06:07.336 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 04:21:57.006 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 04:38:33.712 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 04:55:16.393 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 05:10:21.059 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 05:28:15.280 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 05:43:40.513 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 06:01:00.124 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 06:17:42.807 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 06:33:40.465 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 06:51:35.109 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 07:07:49.801 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 07:24:45.056 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 07:41:33.770 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 07:59:29.359 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 08:02:00.019 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 08:07:25.144 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 08:23:11.881 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 08:39:24.557 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 08:54:47.171 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 08:55:47.078 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 08:56:47.080 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 08:57:47.081 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 08:58:47.080 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 08:59:47.080 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:00:47.081 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:01:47.082 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:02:47.083 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:03:47.084 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:04:47.083 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:05:47.083 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:06:47.084 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:07:47.084 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:08:47.085 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:09:47.086 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:10:47.085 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:11:47.085 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:12:47.086 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:13:47.089 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:14:47.091 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:15:47.090 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:16:47.091 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:17:47.091 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:18:47.092 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:19:47.093 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:20:47.093 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:21:47.094 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:22:47.093 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:23:47.104 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:24:47.103 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:25:47.103 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:26:47.105 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:27:47.105 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:28:47.105 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:29:47.106 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:30:47.106 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:31:47.107 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:32:47.106 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:33:47.107 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:34:47.108 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:35:47.108 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:36:47.108 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:37:47.110 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:38:47.109 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:39:47.109 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:40:47.110 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:41:47.110 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:42:47.112 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:43:47.112 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:44:47.114 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:45:47.113 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:46:47.123 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:47:47.136 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:48:47.135 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:49:47.137 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:50:47.138 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:51:47.139 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:52:47.141 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:53:47.142 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:54:47.143 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:55:47.143 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:56:47.145 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:57:47.145 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:58:47.146 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 09:59:47.148 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:00:47.148 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:01:47.147 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:02:47.149 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:03:47.151 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:04:47.152 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:05:47.153 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:06:47.156 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:07:47.155 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:08:47.157 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:09:47.200 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:10:47.205 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:11:47.207 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:12:47.206 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:13:47.209 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:14:47.210 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:15:47.212 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:16:47.213 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:17:47.215 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:18:47.216 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:19:47.220 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:20:47.218 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:21:47.221 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:22:47.223 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:23:47.224 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:24:47.226 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:25:47.227 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:26:47.229 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:27:47.230 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:28:47.233 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:29:47.234 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:30:47.235 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:31:47.237 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:32:47.238 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:33:47.240 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:34:47.231 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:35:47.203 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:36:47.204 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:37:47.206 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:38:47.207 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:39:47.209 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:40:47.209 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:41:47.208 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:42:47.210 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:43:47.210 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:44:47.212 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:45:47.216 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:46:47.214 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:47:47.215 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:48:47.215 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:49:47.218 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:50:47.218 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:51:47.219 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:52:47.218 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:53:47.220 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:54:47.222 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:55:47.222 [info] acp feature flags (after context update): acpCustom=true
+2026-08-31 10:56:47.226 [info] acp feature flags (after context update): acpCustom=true

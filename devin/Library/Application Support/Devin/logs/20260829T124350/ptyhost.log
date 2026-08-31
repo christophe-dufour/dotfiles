@@ -1,0 +1,1 @@
+2026-08-29 12:43:53.605 [error] Failed to set sticky bit on /private/var/folders/5c/hrdhr0312zj4hcc264kry3m80000gn/T/christophe-devin-desktop-zsh: Error: ENOENT: no such file or directory, chmod '/private/var/folders/5c/hrdhr0312zj4hcc264kry3m80000gn/T/christophe-devin-desktop-zsh'

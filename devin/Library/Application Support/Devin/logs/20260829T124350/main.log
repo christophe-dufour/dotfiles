@@ -1,0 +1,229 @@
+2026-08-29 12:43:50.224 [info] StorageMainService: creating application shared storage
+2026-08-29 12:43:50.301 [info] [shared storage] Creating shared storage database at '/Users/christophe/.devin-shared/sharedStorage/state.vscdb' (wasCreated: true)
+2026-08-29 12:43:50.301 [info] [shared storage] Initializing fallback application storage (path: /Users/christophe/Library/Application Support/Devin/User/globalStorage/state.vscdb)
+2026-08-29 12:43:50.303 [info] [shared storage] Fallback application storage initialized with 3 items
+2026-08-29 12:43:50.305 [info] update#setState idle
+2026-08-29 12:44:20.311 [info] update#setState checking for updates
+2026-08-29 12:44:20.916 [info] update#setState idle
+2026-08-29 12:44:48.637 [info] Extension host with pid 14403 exited with code: 0, signal: unknown.
+2026-08-29 12:44:48.650 [info] WindsurfWindowsMainManager: Window will close {"windowId":1}
+2026-08-29 13:54:43.919 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-29 13:54:43.920 [info] update#setState checking for updates
+2026-08-29 14:11:55.105 [error] #3: https://windsurf-stable.codeium.com/api/update/darwin-arm64/stable/2d9020110aa91587b3c3b0fcf7d1faaf601fc7b8?bg=true&u=none&v=3.8.20 - error undefined net::ERR_NAME_NOT_RESOLVED
+2026-08-29 14:11:55.108 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-29 14:11:56.095 [info] update#setState idle
+2026-08-29 14:13:00.050 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-29 14:13:13.155 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-29 14:37:29.346 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-29 14:50:10.967 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-29 15:07:40.158 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-29 15:07:40.159 [info] update#setState checking for updates
+2026-08-29 15:07:40.924 [error] #4: https://windsurf-stable.codeium.com/api/update/darwin-arm64/stable/2d9020110aa91587b3c3b0fcf7d1faaf601fc7b8?bg=true&u=none&v=3.8.20 - error undefined net::ERR_NAME_NOT_RESOLVED
+2026-08-29 15:25:40.046 [info] update#setState idle
+2026-08-29 16:09:15.908 [info] update#setState checking for updates
+2026-08-29 16:09:18.960 [error] #5: https://windsurf-stable.codeium.com/api/update/darwin-arm64/stable/2d9020110aa91587b3c3b0fcf7d1faaf601fc7b8?bg=true&u=none&v=3.8.20 - error undefined net::ERR_NAME_NOT_RESOLVED
+2026-08-29 16:12:55.764 [info] update#setState idle
+2026-08-29 16:12:55.765 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-29 17:12:10.293 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-29 17:12:10.294 [info] update#setState checking for updates
+2026-08-29 17:12:10.957 [error] #6: https://windsurf-stable.codeium.com/api/update/darwin-arm64/stable/2d9020110aa91587b3c3b0fcf7d1faaf601fc7b8?bg=true&u=none&v=3.8.20 - error undefined net::ERR_NAME_NOT_RESOLVED
+2026-08-29 17:16:25.105 [error] UpdateService error: A server with the specified hostname could not be found.
+2026-08-29 17:16:25.105 [info] update#setState idle
+2026-08-29 17:32:57.988 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-29 17:35:30.996 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-29 17:44:41.890 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-29 17:46:56.446 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-29 17:53:02.165 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-29 17:53:19.996 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-29 17:58:18.021 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-29 18:00:35.628 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-29 18:17:24.708 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-29 18:17:24.709 [info] update#setState checking for updates
+2026-08-29 18:17:25.261 [error] #7: https://windsurf-stable.codeium.com/api/update/darwin-arm64/stable/2d9020110aa91587b3c3b0fcf7d1faaf601fc7b8?bg=true&u=none&v=3.8.20 - error undefined net::ERR_NAME_NOT_RESOLVED
+2026-08-29 18:21:13.020 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-29 18:21:15.663 [info] update#setState idle
+2026-08-29 18:21:54.817 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-29 18:53:23.169 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-29 19:08:51.748 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-29 19:25:51.207 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-29 19:25:51.207 [info] update#setState checking for updates
+2026-08-29 19:25:51.684 [error] #8: https://windsurf-stable.codeium.com/api/update/darwin-arm64/stable/2d9020110aa91587b3c3b0fcf7d1faaf601fc7b8?bg=true&u=none&v=3.8.20 - error undefined net::ERR_NAME_NOT_RESOLVED
+2026-08-29 19:25:52.753 [info] update#setState idle
+2026-08-29 20:02:16.911 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-29 20:09:30.375 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-29 20:14:21.730 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-29 20:33:06.130 [info] update#setState checking for updates
+2026-08-29 20:33:07.951 [error] #9: https://windsurf-stable.codeium.com/api/update/darwin-arm64/stable/2d9020110aa91587b3c3b0fcf7d1faaf601fc7b8?bg=true&u=none&v=3.8.20 - error undefined net::ERR_NAME_NOT_RESOLVED
+2026-08-29 20:36:24.448 [info] update#setState idle
+2026-08-29 20:36:24.448 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-29 21:15:58.095 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-29 21:48:23.577 [info] update#setState checking for updates
+2026-08-29 21:48:26.910 [error] #10: https://windsurf-stable.codeium.com/api/update/darwin-arm64/stable/2d9020110aa91587b3c3b0fcf7d1faaf601fc7b8?bg=true&u=none&v=3.8.20 - error undefined net::ERR_NAME_NOT_RESOLVED
+2026-08-29 21:56:27.219 [info] update#setState idle
+2026-08-29 21:56:27.219 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-29 22:51:26.568 [info] update#setState checking for updates
+2026-08-29 22:51:27.360 [error] #11: https://windsurf-stable.codeium.com/api/update/darwin-arm64/stable/2d9020110aa91587b3c3b0fcf7d1faaf601fc7b8?bg=true&u=none&v=3.8.20 - error undefined net::ERR_NAME_NOT_RESOLVED
+2026-08-29 22:51:28.181 [info] update#setState idle
+2026-08-29 23:51:26.606 [info] update#setState checking for updates
+2026-08-29 23:51:27.150 [info] update#setState idle
+2026-08-30 00:51:26.610 [info] update#setState checking for updates
+2026-08-30 00:51:27.147 [info] update#setState idle
+2026-08-30 00:57:09.776 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-30 02:08:50.096 [info] update#setState checking for updates
+2026-08-30 02:08:50.769 [error] #14: https://windsurf-stable.codeium.com/api/update/darwin-arm64/stable/2d9020110aa91587b3c3b0fcf7d1faaf601fc7b8?bg=true&u=none&v=3.8.20 - error undefined net::ERR_NAME_NOT_RESOLVED
+2026-08-30 02:08:57.637 [info] update#setState idle
+2026-08-30 03:14:57.479 [info] update#setState checking for updates
+2026-08-30 03:32:53.707 [error] #15: https://windsurf-stable.codeium.com/api/update/darwin-arm64/stable/2d9020110aa91587b3c3b0fcf7d1faaf601fc7b8?bg=true&u=none&v=3.8.20 - error undefined net::ERR_NAME_NOT_RESOLVED
+2026-08-30 03:32:53.707 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-30 04:37:13.665 [error] UpdateService error: Could not connect to the server.
+2026-08-30 04:37:13.665 [info] update#setState idle
+2026-08-30 04:37:13.666 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-30 04:49:24.303 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-30 05:06:57.879 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-30 05:36:31.973 [info] update#setState checking for updates
+2026-08-30 05:36:34.811 [error] #16: https://windsurf-stable.codeium.com/api/update/darwin-arm64/stable/2d9020110aa91587b3c3b0fcf7d1faaf601fc7b8?bg=true&u=none&v=3.8.20 - error undefined net::ERR_NAME_NOT_RESOLVED
+2026-08-30 06:01:01.392 [info] update#setState idle
+2026-08-30 06:50:15.070 [info] update#setState checking for updates
+2026-08-30 07:07:23.682 [error] #17: https://windsurf-stable.codeium.com/api/update/darwin-arm64/stable/2d9020110aa91587b3c3b0fcf7d1faaf601fc7b8?bg=true&u=none&v=3.8.20 - error undefined net::ERR_NAME_NOT_RESOLVED
+2026-08-30 07:07:23.682 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-30 07:07:35.801 [info] update#setState idle
+2026-08-30 07:54:18.199 [info] update#setState checking for updates
+2026-08-30 07:54:18.800 [info] update#setState idle
+2026-08-30 08:18:00.373 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-30 08:28:05.391 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-30 08:28:21.264 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-30 09:00:03.772 [info] update#setState checking for updates
+2026-08-30 09:00:06.086 [error] #19: https://windsurf-stable.codeium.com/api/update/darwin-arm64/stable/2d9020110aa91587b3c3b0fcf7d1faaf601fc7b8?bg=true&u=none&v=3.8.20 - error undefined net::ERR_NAME_NOT_RESOLVED
+2026-08-30 09:00:06.898 [info] update#setState idle
+2026-08-30 10:00:03.838 [info] update#setState checking for updates
+2026-08-30 10:00:04.380 [info] update#setState idle
+2026-08-30 10:30:53.106 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-30 10:49:48.781 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-30 11:03:35.892 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-30 11:03:35.892 [info] update#setState checking for updates
+2026-08-30 11:03:36.248 [error] #21: https://windsurf-stable.codeium.com/api/update/darwin-arm64/stable/2d9020110aa91587b3c3b0fcf7d1faaf601fc7b8?bg=true&u=none&v=3.8.20 - error undefined net::ERR_NAME_NOT_RESOLVED
+2026-08-30 11:18:52.653 [info] update#setState idle
+2026-08-30 11:39:07.470 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-30 12:09:55.759 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-30 12:09:55.760 [info] update#setState checking for updates
+2026-08-30 12:09:55.770 [error] UpdateService error: The Internet connection appears to be offline.
+2026-08-30 12:09:55.770 [info] update#setState idle
+2026-08-30 12:09:55.771 [error] #22: https://windsurf-stable.codeium.com/api/update/darwin-arm64/stable/2d9020110aa91587b3c3b0fcf7d1faaf601fc7b8?bg=true&u=none&v=3.8.20 - error undefined net::ERR_INTERNET_DISCONNECTED
+2026-08-30 12:14:19.522 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-30 12:49:49.276 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-30 13:15:19.228 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-30 13:15:19.229 [info] update#setState checking for updates
+2026-08-30 13:15:19.237 [error] UpdateService error: The Internet connection appears to be offline.
+2026-08-30 13:15:19.238 [info] update#setState idle
+2026-08-30 13:15:19.238 [error] #23: https://windsurf-stable.codeium.com/api/update/darwin-arm64/stable/2d9020110aa91587b3c3b0fcf7d1faaf601fc7b8?bg=true&u=none&v=3.8.20 - error undefined net::ERR_INTERNET_DISCONNECTED
+2026-08-30 14:04:45.790 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-30 14:05:33.497 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-30 14:08:18.367 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-30 14:16:20.673 [info] update#setState checking for updates
+2026-08-30 14:16:20.685 [error] UpdateService error: The Internet connection appears to be offline.
+2026-08-30 14:16:20.686 [info] update#setState idle
+2026-08-30 14:16:20.686 [error] #24: https://windsurf-stable.codeium.com/api/update/darwin-arm64/stable/2d9020110aa91587b3c3b0fcf7d1faaf601fc7b8?bg=true&u=none&v=3.8.20 - error undefined net::ERR_INTERNET_DISCONNECTED
+2026-08-30 14:31:32.639 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-30 14:48:16.408 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-30 15:05:09.184 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-30 15:17:18.984 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-30 15:17:18.984 [info] update#setState checking for updates
+2026-08-30 15:17:18.988 [error] UpdateService error: The Internet connection appears to be offline.
+2026-08-30 15:17:18.988 [info] update#setState idle
+2026-08-30 15:17:18.989 [error] #25: https://windsurf-stable.codeium.com/api/update/darwin-arm64/stable/2d9020110aa91587b3c3b0fcf7d1faaf601fc7b8?bg=true&u=none&v=3.8.20 - error undefined net::ERR_INTERNET_DISCONNECTED
+2026-08-30 15:20:10.471 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-30 15:38:06.211 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-30 15:53:26.977 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-30 16:18:20.615 [info] update#setState checking for updates
+2026-08-30 16:18:20.624 [error] UpdateService error: The Internet connection appears to be offline.
+2026-08-30 16:18:20.624 [info] update#setState idle
+2026-08-30 16:18:20.625 [error] #26: https://windsurf-stable.codeium.com/api/update/darwin-arm64/stable/2d9020110aa91587b3c3b0fcf7d1faaf601fc7b8?bg=true&u=none&v=3.8.20 - error undefined net::ERR_INTERNET_DISCONNECTED
+2026-08-30 16:34:35.606 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-30 16:35:28.582 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-30 16:38:19.831 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-30 17:19:20.082 [info] update#setState checking for updates
+2026-08-30 17:19:20.092 [error] UpdateService error: The Internet connection appears to be offline.
+2026-08-30 17:19:20.092 [info] update#setState idle
+2026-08-30 17:19:20.093 [error] #27: https://windsurf-stable.codeium.com/api/update/darwin-arm64/stable/2d9020110aa91587b3c3b0fcf7d1faaf601fc7b8?bg=true&u=none&v=3.8.20 - error undefined net::ERR_INTERNET_DISCONNECTED
+2026-08-30 17:35:28.042 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-30 17:52:23.010 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-30 17:55:05.313 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-30 18:20:19.601 [info] update#setState checking for updates
+2026-08-30 18:20:19.611 [error] UpdateService error: The Internet connection appears to be offline.
+2026-08-30 18:20:19.611 [info] update#setState idle
+2026-08-30 18:20:19.611 [error] #28: https://windsurf-stable.codeium.com/api/update/darwin-arm64/stable/2d9020110aa91587b3c3b0fcf7d1faaf601fc7b8?bg=true&u=none&v=3.8.20 - error undefined net::ERR_INTERNET_DISCONNECTED
+2026-08-30 19:21:09.877 [info] update#setState checking for updates
+2026-08-30 19:21:13.520 [error] #29: https://windsurf-stable.codeium.com/api/update/darwin-arm64/stable/2d9020110aa91587b3c3b0fcf7d1faaf601fc7b8?bg=true&u=none&v=3.8.20 - error undefined net::ERR_NAME_NOT_RESOLVED
+2026-08-30 19:21:14.546 [info] update#setState idle
+2026-08-30 19:25:44.762 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-30 20:27:07.047 [info] update#setState checking for updates
+2026-08-30 20:27:09.886 [error] #30: https://windsurf-stable.codeium.com/api/update/darwin-arm64/stable/2d9020110aa91587b3c3b0fcf7d1faaf601fc7b8?bg=true&u=none&v=3.8.20 - error undefined net::ERR_NAME_NOT_RESOLVED
+2026-08-30 20:27:10.560 [info] update#setState idle
+2026-08-30 20:40:48.045 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-30 21:27:07.025 [info] update#setState checking for updates
+2026-08-30 21:27:07.597 [info] update#setState idle
+2026-08-30 22:27:07.013 [info] update#setState checking for updates
+2026-08-30 22:27:07.594 [info] update#setState idle
+2026-08-30 23:27:06.983 [info] update#setState checking for updates
+2026-08-30 23:27:07.547 [info] update#setState idle
+2026-08-31 00:27:06.983 [info] update#setState checking for updates
+2026-08-31 00:27:07.567 [info] update#setState idle
+2026-08-31 01:27:07.071 [info] update#setState checking for updates
+2026-08-31 01:27:07.842 [info] update#setState idle
+2026-08-31 01:29:16.278 [info] WindsurfWindowsMainManager: Window will load {"windowId":2}
+2026-08-31 01:29:30.988 [info] Extension host with pid 47292 exited with code: 0, signal: unknown.
+2026-08-31 01:29:31.003 [info] WindsurfWindowsMainManager: Window will load {"windowId":2,"workspaceUri":{"id":"0619069e6c9bb243e6646f6de7f85625","uri":{"$mid":1,"fsPath":"/Users/christophe/Code/leplein-apps","external":"file:///Users/christophe/Code/leplein-apps","path":"/Users/christophe/Code/leplein-apps","scheme":"file"}}}
+2026-08-31 01:48:00.556 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-31 02:04:23.248 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-31 02:21:40.930 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-31 02:38:19.589 [info] update#setState checking for updates
+2026-08-31 02:38:20.731 [error] #38: https://windsurf-stable.codeium.com/api/update/darwin-arm64/stable/2d9020110aa91587b3c3b0fcf7d1faaf601fc7b8?bg=true&u=none&v=3.8.20 - error undefined net::ERR_NAME_NOT_RESOLVED
+2026-08-31 03:21:03.205 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-31 03:21:04.070 [info] update#setState idle
+2026-08-31 03:21:31.800 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-31 03:50:22.542 [info] update#setState checking for updates
+2026-08-31 03:50:26.686 [error] #39: https://windsurf-stable.codeium.com/api/update/darwin-arm64/stable/2d9020110aa91587b3c3b0fcf7d1faaf601fc7b8?bg=true&u=none&v=3.8.20 - error undefined net::ERR_NAME_NOT_RESOLVED
+2026-08-31 04:06:07.722 [info] update#setState idle
+2026-08-31 04:38:33.568 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-31 04:55:16.248 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-31 04:55:16.249 [info] update#setState checking for updates
+2026-08-31 04:55:16.805 [error] #40: https://windsurf-stable.codeium.com/api/update/darwin-arm64/stable/2d9020110aa91587b3c3b0fcf7d1faaf601fc7b8?bg=true&u=none&v=3.8.20 - error undefined net::ERR_NAME_NOT_RESOLVED
+2026-08-31 05:10:20.917 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-31 05:10:23.941 [error] UpdateService error: A server with the specified hostname could not be found.
+2026-08-31 05:10:23.942 [info] update#setState idle
+2026-08-31 05:43:39.901 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-31 06:01:01.612 [info] update#setState checking for updates
+2026-08-31 06:01:01.735 [error] #41: https://windsurf-stable.codeium.com/api/update/darwin-arm64/stable/2d9020110aa91587b3c3b0fcf7d1faaf601fc7b8?bg=true&u=none&v=3.8.20 - error undefined net::ERR_NAME_NOT_RESOLVED
+2026-08-31 06:01:02.439 [info] update#setState idle
+2026-08-31 07:07:49.798 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-31 07:07:49.798 [info] update#setState checking for updates
+2026-08-31 07:07:50.501 [error] #42: https://windsurf-stable.codeium.com/api/update/darwin-arm64/stable/2d9020110aa91587b3c3b0fcf7d1faaf601fc7b8?bg=true&u=none&v=3.8.20 - error undefined net::ERR_NAME_NOT_RESOLVED
+2026-08-31 07:07:51.617 [info] update#setState idle
+2026-08-31 07:24:45.232 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-31 07:41:33.932 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-31 08:23:11.837 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-31 08:23:11.837 [info] update#setState checking for updates
+2026-08-31 08:23:12.634 [error] #43: https://windsurf-stable.codeium.com/api/update/darwin-arm64/stable/2d9020110aa91587b3c3b0fcf7d1faaf601fc7b8?bg=true&u=none&v=3.8.20 - error undefined net::ERR_NAME_NOT_RESOLVED
+2026-08-31 08:39:24.935 [info] update#setState idle
+2026-08-31 08:39:24.936 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-31 08:54:47.330 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-31 09:23:11.765 [info] update#setState checking for updates
+2026-08-31 09:23:12.326 [info] update#setState idle
+2026-08-31 10:23:11.840 [info] update#setState checking for updates
+2026-08-31 10:23:12.387 [info] update#setState idle
+2026-08-31 10:57:22.858 [info] Extension host with pid 47755 exited with code: 0, signal: unknown.
+2026-08-31 10:57:22.860 [info] WindsurfWindowsMainManager: Window will close {"windowId":2}
+2026-08-31 11:23:11.788 [info] update#setState checking for updates
+2026-08-31 11:23:12.340 [info] update#setState idle
+2026-08-31 11:54:23.508 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-31 12:03:41.693 [warning] No ptyHost heartbeat after 6 seconds
+2026-08-31 12:23:11.871 [info] update#setState checking for updates
+2026-08-31 12:23:12.477 [info] update#setState idle
+2026-08-31 13:30:36.972 [info] update#setState checking for updates
+2026-08-31 13:30:39.947 [error] #48: https://windsurf-stable.codeium.com/api/update/darwin-arm64/stable/2d9020110aa91587b3c3b0fcf7d1faaf601fc7b8?bg=true&u=none&v=3.8.20 - error undefined net::ERR_NAME_NOT_RESOLVED
+2026-08-31 13:30:40.728 [info] update#setState idle
+2026-08-31 14:26:15.759 [info] WindsurfWindowsMainManager: Window will load {"windowId":3}
+2026-08-31 14:30:36.965 [info] update#setState checking for updates
+2026-08-31 14:30:37.538 [info] update#setState idle
+2026-08-31 15:30:36.956 [info] update#setState checking for updates
+2026-08-31 15:30:37.411 [info] update#setState idle

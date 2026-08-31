@@ -1,0 +1,84 @@
+2026-08-31 01:29:16.989 [info] Started local extension host with pid 47292.
+2026-08-31 01:29:17.020 [error] Extension 'ms-vscode.js-debug' appears in product.json but enables LESS API proposals than the extension wants.
+package.json (LOSES): portsAttributes
+workspaceTrust
+tunnels
+browser
+product.json (WINS): portsAttributes
+findTextInFiles
+workspaceTrust
+tunnels
+DELTA: browser
+2026-08-31 01:29:17.032 [warning] [codeium.windsurf]: Cannot register 'windsurf.marketplaceExtensionGalleryServiceURL'. This property is already registered.
+2026-08-31 01:29:17.032 [warning] [codeium.windsurf]: Cannot register 'windsurf.marketplaceGalleryItemURL'. This property is already registered.
+2026-08-31 01:29:17.164 [info] [DiffZone] BaselineResolution init, 0 existing repos
+2026-08-31 01:29:17.164 [info] [AccountPolicyGate] apply: state=inactive, reason=undefined, isRestricted=false
+2026-08-31 01:29:17.512 [error] [Extension Host] (node:47292) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `Devin Helper (Plugin) --trace-deprecation ...` to show where the warning was created)
+2026-08-31 01:29:19.790 [info] [perf] Render performance baseline is 10ms
+2026-08-31 01:29:22.166 [info] [AccountPolicyGate] apply: state=inactive, reason=undefined, isRestricted=false
+2026-08-31 01:29:31.478 [info] Started local extension host with pid 47755.
+2026-08-31 01:29:31.513 [error] Extension 'ms-vscode.js-debug' appears in product.json but enables LESS API proposals than the extension wants.
+package.json (LOSES): portsAttributes
+workspaceTrust
+tunnels
+browser
+product.json (WINS): portsAttributes
+findTextInFiles
+workspaceTrust
+tunnels
+DELTA: browser
+2026-08-31 01:29:31.521 [warning] [codeium.windsurf]: Cannot register 'windsurf.marketplaceExtensionGalleryServiceURL'. This property is already registered.
+2026-08-31 01:29:31.521 [warning] [codeium.windsurf]: Cannot register 'windsurf.marketplaceGalleryItemURL'. This property is already registered.
+2026-08-31 01:29:31.672 [info] [DiffZone] BaselineResolution init, 0 existing repos
+2026-08-31 01:29:31.672 [info] [AccountPolicyGate] apply: state=inactive, reason=undefined, isRestricted=false
+2026-08-31 01:29:31.926 [error] [Extension Host] (node:47755) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `Devin Helper (Plugin) --trace-deprecation ...` to show where the warning was created)
+2026-08-31 01:29:34.098 [info] [perf] Render performance baseline is 10ms
+2026-08-31 01:29:36.673 [info] [AccountPolicyGate] apply: state=inactive, reason=undefined, isRestricted=false
+2026-08-31 01:29:41.174 [info] ChatSessionStore: Workspace transition from 0619069e6c9bb243e6646f6de7f85625 to fa836b17494acbead9452241f860773c
+2026-08-31 01:29:41.175 [info] ChatSessionStore: Old storage location does not exist, skipping migration
+2026-08-31 02:04:27.498 [error] [Extension Host] FetchError: Unleash Repository error: network timeout at: https://unleash.codeium.com/api/client/features
+	at Timeout.<anonymous> (/Applications/Devin.app/Contents/Resources/app/extensions/windsurf/dist/extension.js:2:565203)
+	at listOnTimeout (node:internal/timers:605:17)
+	at process.processTimers (node:internal/timers:541:7)
+2026-08-31 02:38:18.572 [error] [Extension Host] FetchError: Unleash Repository error: network timeout at: https://unleash.codeium.com/api/client/features
+	at Timeout.<anonymous> (/Applications/Devin.app/Contents/Resources/app/extensions/windsurf/dist/extension.js:2:565203)
+	at listOnTimeout (node:internal/timers:605:17)
+	at process.processTimers (node:internal/timers:541:7)
+2026-08-31 03:11:45.976 [error] [Extension Host] FetchError: Unleash Repository error: network timeout at: https://unleash.codeium.com/api/client/features
+	at Timeout.<anonymous> (/Applications/Devin.app/Contents/Resources/app/extensions/windsurf/dist/extension.js:2:565203)
+	at listOnTimeout (node:internal/timers:605:17)
+	at process.processTimers (node:internal/timers:541:7)
+2026-08-31 03:50:22.659 [error] [Extension Host] FetchError: Unleash Repository error: network timeout at: https://unleash.codeium.com/api/client/features
+	at Timeout.<anonymous> (/Applications/Devin.app/Contents/Resources/app/extensions/windsurf/dist/extension.js:2:565203)
+	at listOnTimeout (node:internal/timers:605:17)
+	at process.processTimers (node:internal/timers:541:7)
+2026-08-31 04:55:20.399 [error] [Extension Host] FetchError: Unleash Repository error: network timeout at: https://unleash.codeium.com/api/client/features
+	at Timeout.<anonymous> (/Applications/Devin.app/Contents/Resources/app/extensions/windsurf/dist/extension.js:2:565203)
+	at listOnTimeout (node:internal/timers:605:17)
+	at process.processTimers (node:internal/timers:541:7)
+2026-08-31 05:28:15.270 [error] [Extension Host] FetchError: Unleash Repository error: network timeout at: https://unleash.codeium.com/api/client/features
+	at Timeout.<anonymous> (/Applications/Devin.app/Contents/Resources/app/extensions/windsurf/dist/extension.js:2:565203)
+	at listOnTimeout (node:internal/timers:605:17)
+	at process.processTimers (node:internal/timers:541:7)
+2026-08-31 06:33:42.464 [error] [Extension Host] FetchError: Unleash Repository error: network timeout at: https://unleash.codeium.com/api/client/features
+	at Timeout.<anonymous> (/Applications/Devin.app/Contents/Resources/app/extensions/windsurf/dist/extension.js:2:565203)
+	at listOnTimeout (node:internal/timers:605:17)
+	at process.processTimers (node:internal/timers:541:7)
+2026-08-31 07:07:49.797 [error] [Extension Host] FetchError: Unleash Repository error: network timeout at: https://unleash.codeium.com/api/client/features
+	at Timeout.<anonymous> (/Applications/Devin.app/Contents/Resources/app/extensions/windsurf/dist/extension.js:2:565203)
+	at listOnTimeout (node:internal/timers:605:17)
+	at process.processTimers (node:internal/timers:541:7)
+2026-08-31 07:41:37.776 [error] [Extension Host] FetchError: Unleash Repository error: network timeout at: https://unleash.codeium.com/api/client/features
+	at Timeout.<anonymous> (/Applications/Devin.app/Contents/Resources/app/extensions/windsurf/dist/extension.js:2:565203)
+	at listOnTimeout (node:internal/timers:605:17)
+	at process.processTimers (node:internal/timers:541:7)
+2026-08-31 08:02:04.020 [error] [Extension Host] FetchError: Unleash Repository error: network timeout at: https://unleash.codeium.com/api/client/features
+	at Timeout.<anonymous> (/Applications/Devin.app/Contents/Resources/app/extensions/windsurf/dist/extension.js:2:565203)
+	at listOnTimeout (node:internal/timers:605:17)
+	at process.processTimers (node:internal/timers:541:7)
+2026-08-31 09:38:17.479 [error] [Extension Host] FetchError: Unleash Repository error: network timeout at: https://unleash.codeium.com/api/client/features
+	at Timeout.<anonymous> (/Applications/Devin.app/Contents/Resources/app/extensions/windsurf/dist/extension.js:2:565203)
+	at listOnTimeout (node:internal/timers:605:17)
+	at process.processTimers (node:internal/timers:541:7)

@@ -77,3 +77,4 @@ vscode "testdouble.vscode-standard-ruby"
 # has been launched at least once (its CLI is self-installed on first launch,
 # not present immediately after `brew install --cask`).
 # anthropic.claude-code, biomejs.biome, bradlc.vscode-tailwindcss
+brew "--cask"

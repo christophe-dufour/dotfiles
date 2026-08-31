@@ -1,0 +1,22 @@
+2026-08-30T23:29:21.066861Z  INFO chisel: elapsed_since_main_ms=19 logging initialized
+2026-08-30T23:29:21.067186Z  INFO chisel: log_file=/Users/christophe/.local/share/devin/cli/logs/devin_20260831-012921_47569.log writing logs to file
+2026-08-30T23:29:21.068201Z  INFO init_cli: chisel: version=3000.5.20 commit=2d902011 os=macos arch=aarch64 binary=devin startup
+2026-08-30T23:29:21.068248Z  INFO log_maintenance: chisel::log_maintenance: close time.busy=268µs time.idle=6.79µs
+2026-08-30T23:29:21.068816Z  INFO init_cli:load_credentials: chisel: close time.busy=119µs time.idle=353µs
+2026-08-30T23:29:21.070905Z  INFO init_cli:analytics_new: chisel: close time.busy=1.18ms time.idle=154µs
+2026-08-30T23:29:21.071084Z  INFO init_cli: chisel: close time.busy=3.44ms time.idle=381µs
+2026-08-30T23:29:21.077530Z  INFO chisel: CLI init complete; dispatching command
+2026-08-30T23:29:21.077730Z  INFO run_acp_server: chisel_server::acp: Starting ACP server
+2026-08-30T23:29:21.077735Z  INFO run_acp_server: chisel_server::acp: ACP server PID: 47569
+2026-08-30T23:29:21.078169Z  INFO run_acp_server:init_acp_server: chisel_server::acp: ACP server credential policy: ACP host is the sole source of credentials. Local CLI credentials (env vars, on-disk REPL store) will NOT be used. Waiting for the ACP host to call `authenticate`.
+2026-08-30T23:29:21.084109Z  INFO run_acp_server:init_acp_server: chisel_server::acp: close time.busy=6.18ms time.idle=172µs
+2026-08-30T23:29:21.084114Z  INFO run_acp_server: chisel_server::acp: ACP server ready; starting stdio transport
+2026-08-30T23:29:21.091911Z  INFO run_acp_server:acp_bridge_dispatch{method="initialize" queue_wait_ms=0}:initialize: chisel_agent::acp_server::agent_impl: ACP: client capabilities — terminal=false, terminal_auth=false, fs.read=true, fs.write=true, subagents=true, elicitation=true, partial_content=true, multi_root=true, grouped_options=true, windsurf_config=true, message_grouping=true, raw_ref_tags=true, revert=true, wiki=false, request_diagnostics=true, editor_context=true, terminal_context=false, mcp=true, plugins=true, fast_context=true, subagent_control=true, workspace_dir_commands=false, chains=false, browser_preview=true, browser_preview_open=true, clipboard_write=false
+2026-08-30T23:29:21.092339Z  INFO run_acp_server:acp_bridge_dispatch{method="initialize" queue_wait_ms=0}:initialize: chisel_agent::acp_server::agent_impl: close time.busy=1.99ms time.idle=14.6µs
+2026-08-30T23:29:21.092522Z  INFO run_acp_server:acp_bridge_dispatch{method="initialize" queue_wait_ms=0}: chisel_agent::acp_server: close time.busy=2.21ms time.idle=174µs
+2026-08-30T23:29:21.123332Z  INFO run_acp_server:acp_bridge_dispatch{method="authenticate" queue_wait_ms=0}:authenticate: chisel_agent::acp_server::agent_impl: ACP: authenticate #1 (agent_instance=0x12b616a40, client=Some("windsurf"), had_credentials=false, method_id=windsurf-api-key, meta_keys=["api_key", "api_server_url"])
+2026-08-30T23:29:21.123378Z  INFO run_acp_server:acp_bridge_dispatch{method="authenticate" queue_wait_ms=0}:authenticate: chisel_agent::acp_server::agent_impl: ACP: API key provided directly via authenticate meta
+2026-08-30T23:29:22.233230Z  INFO chisel_api::telemetry::unleash_sampling: unleash flags evaluated: cli-smart-mode=true cli-user-edit-awareness=true cli-symlink-guard-killswitch=false (user_id=false team_id=false)
+2026-08-30T23:29:22.308258Z  INFO run_acp_server:acp_bridge_dispatch{method="authenticate" queue_wait_ms=0}:authenticate: chisel_agent::acp_server::agent_impl: close time.busy=22.1ms time.idle=1.16s
+2026-08-30T23:29:22.308273Z  INFO run_acp_server:acp_bridge_dispatch{method="authenticate" queue_wait_ms=0}: chisel_agent::acp_server: close time.busy=22.2ms time.idle=1.16s
+2026-08-30T23:29:22.308671Z  INFO chisel_api::telemetry::manager::cache: Saved telemetry config cache at /Users/christophe/.cache/devin/telemetry_state.json
