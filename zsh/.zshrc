@@ -4,6 +4,10 @@ export HOMEBREW_PREFIX="/opt/homebrew"
 export HOMEBREW_CELLAR="/opt/homebrew/Cellar"
 export HOMEBREW_REPOSITORY="/opt/homebrew"
 
+# sops — macOS has no XDG-style default for this, so point it at the key
+# restored by dots-secrets (see bin/dots-secrets)
+export SOPS_AGE_KEY_FILE="$HOME/.config/sops/age/keys.txt"
+
 # Completions — cached, only rebuilt daily
 autoload -Uz compinit
 if [ "$(date +'%j')" != "$(stat -f '%Sm' -t '%j' ~/.zcompdump 2>/dev/null)" ]; then
