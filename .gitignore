@@ -6,3 +6,18 @@
 .zshrc.local
 .DS_Store
 devin/
+
+# Claude Code local runtime state — never meant to be tracked, not just
+# "sensitive" but pure per-machine state (conversation transcripts, session
+# metadata, OAuth-token backups, shell env snapshots, file-edit history).
+claude/.claude/backups/
+claude/.claude/cache/
+claude/.claude/file-history/
+claude/.claude/history.jsonl
+claude/.claude/image-cache/
+claude/.claude/mcp-needs-auth-cache.json
+claude/.claude/plugins/
+claude/.claude/projects/
+claude/.claude/sessions/
+claude/.claude/shell-snapshots/
+claude/.claude/.last-cleanup
