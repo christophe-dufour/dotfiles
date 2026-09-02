@@ -8,6 +8,13 @@ export HOMEBREW_REPOSITORY="/opt/homebrew"
 # restored by dots-secrets (see bin/dots-secrets)
 export SOPS_AGE_KEY_FILE="$HOME/.config/sops/age/keys.txt"
 
+# Route Claude Code through the local Headroom compression proxy (kept
+# running by launchagents/com.headroom.proxy.plist). Deliberately NOT
+# setting OPENAI_BASE_URL here — that would also redirect any
+# OpenAI-compatible client (e.g. Kimi in opencode), which isn't wired
+# through Headroom yet.
+export ANTHROPIC_BASE_URL="http://127.0.0.1:8787"
+
 # Completions — cached, only rebuilt daily
 autoload -Uz compinit
 if [ "$(date +'%j')" != "$(stat -f '%Sm' -t '%j' ~/.zcompdump 2>/dev/null)" ]; then
