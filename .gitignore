@@ -7,17 +7,14 @@
 .DS_Store
 devin/
 
-# Claude Code local runtime state — never meant to be tracked, not just
-# "sensitive" but pure per-machine state (conversation transcripts, session
-# metadata, OAuth-token backups, shell env snapshots, file-edit history).
-claude/.claude/backups/
-claude/.claude/cache/
-claude/.claude/file-history/
-claude/.claude/history.jsonl
-claude/.claude/image-cache/
-claude/.claude/mcp-needs-auth-cache.json
-claude/.claude/plugins/
-claude/.claude/projects/
-claude/.claude/sessions/
-claude/.claude/shell-snapshots/
-claude/.claude/.last-cleanup
+# Claude Code invents new local-state directories under ~/.claude over time
+# (image-cache showed up mid-session while writing this file) — a blocklist
+# of known-bad ones always lags behind and leaks the next one. Allowlist
+# instead: ignore everything under claude/.claude/ except the files we
+# actually hand-author. Add a `!claude/.claude/<path>` line here whenever a
+# new file is deliberately meant to be tracked (e.g. the rtk-generated hook,
+# once verified — rtk init -g regenerates settings.json in place, no new
+# line needed for that one).
+claude/.claude/*
+!claude/.claude/settings.json
+!claude/.claude/CLAUDE.md
