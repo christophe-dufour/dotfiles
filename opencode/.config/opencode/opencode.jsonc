@@ -1,5 +1,12 @@
 {
   "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "moonshotai": {
+      "options": {
+        "baseURL": "http://127.0.0.1:8787/v1"
+      }
+    }
+  },
   "mcp": {
     "github": {
       "type": "remote",
@@ -12,6 +19,16 @@
     "sentry": {
       "type": "remote",
       "url": "https://mcp.sentry.dev/mcp"
+    },
+    "grafana": {
+      "type": "local",
+      "command": [
+        "mcp-grafana"
+      ],
+      "environment": {
+        "GRAFANA_URL": "https://leplein.grafana.net",
+        "GRAFANA_SERVICE_ACCOUNT_TOKEN_FILE": "/Users/christophe/.config/mcp-grafana/token"
+      }
     }
   }
 }
