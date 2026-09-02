@@ -14,6 +14,12 @@ devin/
 starship/.config/sops/age/keys.txt
 starship/.config/rclone/rclone.conf
 
+# 1Password CLI's own config (device id, sign-in state) — the `op` CLI
+# refuses to run at all when ~/.config/op is a symlink (hardened against
+# exactly the "symlinked into who-knows-where" pattern this repo used).
+# Per-machine state anyway, nothing worth versioning.
+starship/.config/op/
+
 # Claude Code invents new local-state directories under ~/.claude over time
 # (image-cache showed up mid-session while writing this file) — a blocklist
 # of known-bad ones always lags behind and leaks the next one. Allowlist
