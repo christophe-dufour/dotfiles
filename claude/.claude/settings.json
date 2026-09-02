@@ -12,5 +12,10 @@
       }
     ]
   },
-  "tui": "fullscreen"
+  "tui": "fullscreen",
+  "theme": "dark",
+  "statusLine": {
+    "type": "command",
+    "command": "~/.config/term-statusbar/claude-statusline-writer.sh"
+  }
 }

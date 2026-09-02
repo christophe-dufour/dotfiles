@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Two-way sync: ~/Obsidian <-> pCloud. Requires an initial manual
+# `rclone bisync ~/Obsidian pcloud:Obsidian-Christophe --resync` before
+# this is scheduled — bisync refuses to run without a prior baseline.
+set -euo pipefail
+
+RCLONE="/opt/homebrew/bin/rclone"
+LOCAL="$HOME/Obsidian"
+REMOTE="pcloud:Obsidian-Christophe"
+
+"$RCLONE" bisync "$LOCAL" "$REMOTE" --exclude ".DS_Store"

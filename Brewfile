@@ -79,3 +79,4 @@ vscode "testdouble.vscode-standard-ruby"
 # anthropic.claude-code, biomejs.biome, bradlc.vscode-tailwindcss
 brew "--cask"
 brew "claude-code"
+brew "rtk"

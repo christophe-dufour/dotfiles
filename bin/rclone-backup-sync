@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# One-way sync: local folders -> pCloud backup tree. Deletes propagate.
+set -euo pipefail
+
+RCLONE="/opt/homebrew/bin/rclone"
+REMOTE_ROOT="pcloud:Backups/Computers/Christophe MacBook M3"
+FOLDERS=(Documents Movies Music Pictures Desktop Downloads)
+
+for folder in "${FOLDERS[@]}"; do
+  "$RCLONE" sync "$HOME/$folder" "$REMOTE_ROOT/$folder" --exclude ".DS_Store"
+done

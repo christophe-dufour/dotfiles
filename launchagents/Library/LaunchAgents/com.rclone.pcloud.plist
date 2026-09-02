@@ -6,7 +6,7 @@
     <string>com.rclone.pcloud</string>
     <key>ProgramArguments</key>
     <array>
-        <string>/opt/homebrew/bin/rclone</string>
+        <string>/usr/local/bin/rclone</string>
         <string>mount</string>
         <string>pcloud:</string>
         <string>/Users/christophe/pcloud-mount</string>
