@@ -7,6 +7,13 @@
 .DS_Store
 devin/
 
+# Live credentials that must go through bin/dots-secrets (1Password), never
+# git — that script's whole purpose is keeping these out of the repo, but
+# they got committed anyway before it existed. *.key above doesn't match
+# "keys.txt" (plural, .txt extension), which is why this slipped through.
+starship/.config/sops/age/keys.txt
+starship/.config/rclone/rclone.conf
+
 # Claude Code invents new local-state directories under ~/.claude over time
 # (image-cache showed up mid-session while writing this file) — a blocklist
 # of known-bad ones always lags behind and leaks the next one. Allowlist
