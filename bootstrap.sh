@@ -29,13 +29,24 @@ fi
 cd ~/.dotfiles
 
 # ── Stow packages ─────────────────────────────────────────────────────────────
-for pkg in zsh git ssh starship claude launchagents devin vscode; do
+for pkg in zsh git ssh starship claude opencode launchagents devin vscode; do
   stow "$pkg" && echo "✓ $pkg"
 done
 
 # ── Install packages ──────────────────────────────────────────────────────────
 echo "Installing Homebrew packages..."
 brew bundle install --file=~/.dotfiles/Brewfile
+
+# ── Token-efficiency layer (rtk + headroom CLI) ────────────────────────────────
+# rtk init -g is idempotent — safe to re-run, regenerates the hook config.
+echo "Wiring rtk into Claude Code and OpenCode..."
+rtk init -g
+rtk init -g --opencode
+
+# headroom's Homebrew cask only ships the GUI app; the CLI (doctor, proxy,
+# mcp install) is a separate `uv tool install`.
+echo "Installing headroom CLI..."
+uv tool install "headroom-ai[all]"
 
 # ── macOS preferences ─────────────────────────────────────────────────────────
 echo "Applying macOS defaults..."

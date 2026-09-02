@@ -60,14 +60,20 @@ bash "$DOTFILES/bin/dots-secrets" pull
 step "5/9 — GitHub CLI auth"
 gh auth login
 
-step "6/9 — pCloud mount"
+step "6/9 — pCloud mount + Headroom proxy"
 mkdir -p "$HOME/pcloud-mount"
 launchctl load "$HOME/Library/LaunchAgents/com.rclone.pcloud.plist" 2>/dev/null
+launchctl load "$HOME/Library/LaunchAgents/com.headroom.proxy.plist" 2>/dev/null
 sleep 2
 if ls "$HOME/pcloud-mount" >/dev/null 2>&1; then
   ok "pCloud mounted"
 else
   info "pCloud mount not up yet — check /tmp/rclone-pcloud.err (needs rclone.conf from step 3)"
+fi
+if curl -s http://127.0.0.1:8787/livez >/dev/null 2>&1; then
+  ok "Headroom proxy up"
+else
+  info "Headroom proxy not up yet — check /tmp/headroom-proxy.err (needs the headroom CLI: uv tool install \"headroom-ai[all]\")"
 fi
 
 step "7/9 — Restore personal files from external drive ($EXTERNAL_DRIVE)"
