@@ -1,5 +1,5 @@
 export DOTFILES="$HOME/.dotfiles"
-export PATH="$DOTFILES/bin:/opt/homebrew/bin:/opt/homebrew/sbin:$PATH"
+export PATH="$DOTFILES/bin:/opt/homebrew/bin:/opt/homebrew/sbin:$HOME/.local/bin:$PATH"
 export HOMEBREW_PREFIX="/opt/homebrew"
 export HOMEBREW_CELLAR="/opt/homebrew/Cellar"
 export HOMEBREW_REPOSITORY="/opt/homebrew"
